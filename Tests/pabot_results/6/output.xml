@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-20T17:14:51.617628" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Lenovo\Desktop\SauceDemo-Project\Tests">
+<suite id="s1-s1" name="ProductpageTest" source="C:\Users\Lenovo\Desktop\SauceDemo-Project\Tests\ProductpageTest.robot">
+<test id="s1-s1-t1" name="Validate the all item buttons in the menu" line="12">
+<kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:14:52.383951" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2025-05-20T17:14:52.383518" elapsed="23.983320"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:16.368429" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-20T17:15:16.367424" elapsed="3.587781"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-20T17:15:19.955724" elapsed="0.349563"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-20T17:15:20.305817" elapsed="0.007923"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:14:52.382377" elapsed="27.932113"/>
+</kw>
+<kw name="Fill the login form" owner="LoginPageResource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:20.317596" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:20.316409" elapsed="0.499591"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:20.818375" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-05-20T17:15:20.832327" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:20.817271" elapsed="0.078858"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:20.897742" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:20.896817" elapsed="0.385551"/>
+</kw>
+<arg>username=standard_user</arg>
+<arg>password=secret_sauce</arg>
+<status status="PASS" start="2025-05-20T17:15:20.315195" elapsed="0.967494"/>
+</kw>
+<kw name="Click the Menu button in the product page" owner="ProductpageResource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:21.286162" level="INFO">Clicking element 'id:react-burger-menu-btn'.</msg>
+<arg>${menu-bar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:21.285054" elapsed="0.255425"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:15:21.283769" elapsed="0.257001"/>
+</kw>
+<kw name="Click the All items in the product page" owner="ProductpageResource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:21.542757" level="INFO">Clicking element 'id:inventory_sidebar_link'.</msg>
+<arg>${Allitem}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:21.542016" elapsed="0.250529"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:15:21.541176" elapsed="0.251708"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:21.794797" level="INFO">Verifying element 'id:inventory_sidebar_link' contains exact text 'All Items'.</msg>
+<arg>${Allitem}</arg>
+<arg>All Items</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-20T17:15:21.793666" elapsed="0.026082"/>
+</kw>
+<kw name="Close browser session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-20T17:15:21.821523" elapsed="42.967489"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:15:21.820465" elapsed="42.970791"/>
+</kw>
+<tag>alliteminmenu</tag>
+<status status="PASS" start="2025-05-20T17:14:52.381191" elapsed="72.410658"/>
+</test>
+<doc>Product page tests</doc>
+<status status="PASS" start="2025-05-20T17:14:51.673651" elapsed="73.120961"/>
+</suite>
+<status status="PASS" start="2025-05-20T17:14:51.652487" elapsed="73.144480"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">alliteminmenu</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="ProductpageTest" id="s1-s1" pass="1" fail="0" skip="0">Tests.ProductpageTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

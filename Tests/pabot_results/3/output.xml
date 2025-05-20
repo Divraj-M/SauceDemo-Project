@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-20T17:14:51.798114" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Lenovo\Desktop\SauceDemo-Project\Tests">
+<suite id="s1-s1" name="Addtocarttest" source="C:\Users\Lenovo\Desktop\SauceDemo-Project\Tests\addtocarttest.robot">
+<test id="s1-s1-t1" name="Verify the product is add to cart and checkoutone" line="36">
+<kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:14:52.429330" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2025-05-20T17:14:52.428826" elapsed="8.747011"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:01.177180" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-20T17:15:01.176489" elapsed="7.656193"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-20T17:15:08.833122" elapsed="1.095286"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-20T17:15:09.928838" elapsed="0.004977"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:14:52.427561" elapsed="17.506571"/>
+</kw>
+<kw name="Fill the login form" owner="LoginPageResource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:09.937017" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:09.935913" elapsed="1.488352"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:11.425562" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-05-20T17:15:11.716608" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:11.424729" elapsed="1.458149"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:12.883982" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:12.883272" elapsed="0.796186"/>
+</kw>
+<arg>username=standard_user</arg>
+<arg>password=secret_sauce</arg>
+<status status="PASS" start="2025-05-20T17:15:09.934774" elapsed="3.744959"/>
+</kw>
+<kw name="Add the Product to the cart" owner="ProductpageResource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:13.681693" level="INFO">Clicking element 'xpath://div[contains(text(),'Sauce Labs Bike Light')]'.</msg>
+<arg>${productdog}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:13.681038" elapsed="0.417063"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:14.099367" level="INFO">Clicking button 'xpath://button[@class='btn btn_primary btn_small btn_inventory']'.</msg>
+<arg>${addtocart}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:14.098650" elapsed="0.310385"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:15:13.680195" elapsed="0.729128"/>
+</kw>
+<kw name="click the add to cart button" owner="addtocartresource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:14.411892" level="INFO">Clicking element 'xpath://a[@class='shopping_cart_link']'.</msg>
+<arg>${addtocartbtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:14.411110" elapsed="0.480193"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:15:14.409706" elapsed="0.481898"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:14.892746" level="INFO">Verifying element '//div[@class='inventory_item_name']' contains exact text 'Sauce Labs Bike Light'.</msg>
+<arg>locator=//div[@class='inventory_item_name']</arg>
+<arg>expected=Sauce Labs Bike Light</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-20T17:15:14.891985" elapsed="0.030993"/>
+</kw>
+<kw name="click the checkout button in the cart" owner="addtocartresource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:14.925325" level="INFO">Clicking button 'id:checkout'.</msg>
+<arg>${checkout}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:14.924561" elapsed="0.429788"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:15:14.923535" elapsed="0.431106"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:15.355831" level="INFO">Verifying element 'xpath://span[contains(text(),'Checkout: Your Information')]' contains exact text 'Checkout: Your Information'.</msg>
+<arg>${checkoutone}</arg>
+<arg>Checkout: Your Information</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-20T17:15:15.354985" elapsed="0.032903"/>
+</kw>
+<kw name="Close browser session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-20T17:15:15.389913" elapsed="49.011673"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:15:15.388704" elapsed="49.014693"/>
+</kw>
+<tag>checkoutone</tag>
+<status status="PASS" start="2025-05-20T17:14:52.426309" elapsed="71.977714"/>
+</test>
+<doc>add to cart tests</doc>
+<status status="PASS" start="2025-05-20T17:14:51.867775" elapsed="72.539460"/>
+</suite>
+<status status="PASS" start="2025-05-20T17:14:51.835615" elapsed="72.573719"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">checkoutone</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="Addtocarttest" id="s1-s1" pass="1" fail="0" skip="0">Tests.Addtocarttest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

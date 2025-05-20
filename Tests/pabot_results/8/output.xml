@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-20T17:14:51.791780" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Lenovo\Desktop\SauceDemo-Project\Tests">
+<suite id="s1-s1" name="ProductpageTest" source="C:\Users\Lenovo\Desktop\SauceDemo-Project\Tests\ProductpageTest.robot">
+<test id="s1-s1-t1" name="verify the Logout button in the product page" line="26">
+<kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:14:52.439320" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2025-05-20T17:14:52.438829" elapsed="19.829028"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:12.269292" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-20T17:15:12.268458" elapsed="3.768069"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-20T17:15:16.037197" elapsed="0.357437"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-20T17:15:16.395114" elapsed="0.006925"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:14:52.435385" elapsed="23.967320"/>
+</kw>
+<kw name="Fill the login form" owner="LoginPageResource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:16.406271" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:16.404770" elapsed="0.604638"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:17.011992" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-05-20T17:15:17.025383" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:17.011104" elapsed="0.186486"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:17.198804" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:17.198059" elapsed="0.473702"/>
+</kw>
+<arg>username=standard_user</arg>
+<arg>password=secret_sauce</arg>
+<status status="PASS" start="2025-05-20T17:15:16.403388" elapsed="1.268706"/>
+</kw>
+<kw name="Click the Menu button in the product page" owner="ProductpageResource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:17.675708" level="INFO">Clicking element 'id:react-burger-menu-btn'.</msg>
+<arg>${menu-bar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:17.674081" elapsed="0.332257"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:15:17.672690" elapsed="0.333950"/>
+</kw>
+<kw name="Click the logout button in the product page" owner="ProductpageResource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:18.008885" level="INFO">Clicking element 'id:logout_sidebar_link'.</msg>
+<arg>${logout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:18.007987" elapsed="0.286952"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:15:18.007076" elapsed="0.288167"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:18.339265" level="INFO">Element 'id:login-button' is displayed.</msg>
+<arg>id:login-button</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-20T17:15:18.295654" elapsed="0.043831"/>
+</kw>
+<kw name="Close browser session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-20T17:15:18.341314" elapsed="46.346644"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:15:18.340181" elapsed="46.350678"/>
+</kw>
+<tag>logout</tag>
+<status status="PASS" start="2025-05-20T17:14:52.433208" elapsed="72.258438"/>
+</test>
+<doc>Product page tests</doc>
+<status status="PASS" start="2025-05-20T17:14:51.862273" elapsed="72.832538"/>
+</suite>
+<status status="PASS" start="2025-05-20T17:14:51.828914" elapsed="72.868231"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">logout</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="ProductpageTest" id="s1-s1" pass="1" fail="0" skip="0">Tests.ProductpageTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

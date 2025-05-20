@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-20T17:14:54.923373" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Lenovo\Desktop\SauceDemo-Project\Tests">
+<suite id="s1-s1" name="LoginPageTest" source="C:\Users\Lenovo\Desktop\SauceDemo-Project\Tests\LoginPageTest.robot">
+<doc>Tests to Login to Login Page</doc>
+<status status="SKIP" start="2025-05-20T17:14:54.995623" elapsed="3.185045"/>
+</suite>
+<status status="SKIP" start="2025-05-20T17:14:54.965505" elapsed="3.217201"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="0" skip="0">Tests</stat>
+<stat name="LoginPageTest" id="s1-s1" pass="0" fail="0" skip="0">Tests.LoginPageTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,15 @@
+datasources:4db1752ce84b85ec9c1b51573067351def14741a
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:11d4871d4fccceb9bb25823ce649904b71c8c8c8
+--test Tests.Addtocarttest.Verify the product is added to cart
+--test Tests.Addtocarttest.Verify the product is remove in the cart
+--test Tests.Addtocarttest.Verify the user is continue the shopping
+--test Tests.Addtocarttest.Verify the product is add to cart and checkoutone
+--test Tests.Addtocarttest.Verify the user can cancel the checkoutone process
+--test Tests.LoginPageTest.Validate Login with
+--test Tests.ProductpageTest.Validate the all item buttons in the menu
+--test Tests.ProductpageTest.verify the about page
+--test Tests.ProductpageTest.verify the Logout button in the product page
+--test Tests.ProductpageTest.verify the resetapp in the page
+--test Tests.ProductpageTest.Verify the filter as low to high

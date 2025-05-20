@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-20T17:14:51.644492" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Lenovo\Desktop\SauceDemo-Project\Tests">
+<suite id="s1-s1" name="ProductpageTest" source="C:\Users\Lenovo\Desktop\SauceDemo-Project\Tests\ProductpageTest.robot">
+<test id="s1-s1-t1" name="verify the resetapp in the page" line="33">
+<kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:14:52.392532" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2025-05-20T17:14:52.392099" elapsed="37.245582"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:29.639282" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-20T17:15:29.638341" elapsed="5.551481"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-20T17:15:35.190361" elapsed="0.423957"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-20T17:15:35.614819" elapsed="0.008113"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:14:52.390955" elapsed="43.232291"/>
+</kw>
+<kw name="Fill the login form" owner="LoginPageResource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:35.626920" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:35.625163" elapsed="0.556986"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:36.183820" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-05-20T17:15:36.311711" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:36.182839" elapsed="0.260722"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:36.444619" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:36.444002" elapsed="0.674243"/>
+</kw>
+<arg>username=standard_user</arg>
+<arg>password=secret_sauce</arg>
+<status status="PASS" start="2025-05-20T17:15:35.623983" elapsed="1.494622"/>
+</kw>
+<kw name="Add the Product to the cart" owner="ProductpageResource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:37.121076" level="INFO">Clicking element 'xpath://div[contains(text(),'Sauce Labs Bike Light')]'.</msg>
+<arg>${productdog}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:37.120183" elapsed="0.910942"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:38.490120" level="INFO">Clicking button 'xpath://button[@class='btn btn_primary btn_small btn_inventory']'.</msg>
+<arg>${addtocart}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:38.031572" elapsed="0.885921"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:15:37.119157" elapsed="1.798620"/>
+</kw>
+<kw name="Click the Menu button in the product page" owner="ProductpageResource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:38.920191" level="INFO">Clicking element 'id:react-burger-menu-btn'.</msg>
+<arg>${menu-bar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:38.919375" elapsed="0.276393"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:15:38.918231" elapsed="0.277834"/>
+</kw>
+<kw name="Click the resetapp button in the product page" owner="ProductpageResource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:39.198071" level="INFO">Clicking element 'id:reset_sidebar_link'.</msg>
+<arg>${resetapp}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-20T17:15:39.197376" elapsed="0.355022"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:15:39.196478" elapsed="0.356204"/>
+</kw>
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2025-05-20T17:15:44.687378" level="INFO">Element 'xpath://span[@class='shopping_cart_badge']' did not exist.</msg>
+<arg>xpath://span[@class='shopping_cart_badge']</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2025-05-20T17:15:39.553015" elapsed="5.134644"/>
+</kw>
+<kw name="Close browser session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-20T17:15:44.689565" elapsed="21.588846"/>
+</kw>
+<status status="PASS" start="2025-05-20T17:15:44.688418" elapsed="21.590278"/>
+</kw>
+<tag>resetapp</tag>
+<status status="PASS" start="2025-05-20T17:14:52.389762" elapsed="73.889073"/>
+</test>
+<doc>Product page tests</doc>
+<status status="PASS" start="2025-05-20T17:14:51.702705" elapsed="74.577787"/>
+</suite>
+<status status="PASS" start="2025-05-20T17:14:51.679447" elapsed="74.602849"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">resetapp</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="ProductpageTest" id="s1-s1" pass="1" fail="0" skip="0">Tests.ProductpageTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

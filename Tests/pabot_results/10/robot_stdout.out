@@ -1,0 +1,31 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.ProductpageTest :: Product page tests                                   
+==============================================================================
+Verify the filter as low to high                                      $15.99
+$49.99
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\SauceDemo-Project\Tests\ProductpageTest.robot:42
+    T:  Verify the filter as low to high    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\SauceDemo-Project\Tests\ProductpageTest.robot:47
+      Store the list of price in the variable list after apply filter    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\SauceDemo-Project\Resources\ProductpageResource.robot:56
+      Should Contain    ${text2}    ${texts}
+      |  ${text2} =  (str)
+      |  ${texts} = $49.99 (str)
+______________________________________________________________________________
+| FAIL |
+'' does not contain '$49.99'
+------------------------------------------------------------------------------
+Tests.ProductpageTest :: Product page tests                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Lenovo\Desktop\SauceDemo-Project\Tests\pabot_results\10\output.xml
