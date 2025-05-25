@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Tests to Login to Login Page
+Documentation    Tests to Login
 Library    SeleniumLibrary
 Test Setup    Open the browser with URL
 Test Teardown    Close browser session
