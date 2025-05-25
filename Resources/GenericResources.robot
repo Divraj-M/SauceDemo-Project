@@ -6,7 +6,7 @@ Library    SeleniumLibrary
 ${valid_username}    Admin
 ${valid_password}    admin123    
 ${url}    https://www.saucedemo.com/
-${browser_name}    Edge
+${browser_name}    Firefox
 
 *** Keywords ***
 Open the Browser with URL
