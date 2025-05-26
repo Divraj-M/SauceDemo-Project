@@ -18,7 +18,7 @@ ${zipcode}
 
 *** Test Cases ***
 Validate the checkout form page    ${firstname}    ${lastname}    ${zipcode}
-
+# logic for checkout
 *** Keywords ***
 Validate the checkout page form
     [Arguments]    ${firstname}    ${lastname}    ${zipcode}
@@ -44,4 +44,5 @@ Validate the checkout page form
     ELSE
         CheckoutStepOneResource.Verify the get the error message as Firstname  
     END
+
     
