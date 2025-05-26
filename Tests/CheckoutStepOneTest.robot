@@ -8,7 +8,7 @@ Resource    ../Resources/LoginPageResource.robot
 Resource    ../Resources/ProductpageResource.robot
 Resource    ../Resources/CheckoutStepOneResource.robot
 Resource    ../Resources/addtocartresource.robot
-Library    DataDriver    file=C:/Users/Lenovo/Desktop/SauceDemo-Project/Resources/Checkoutform.xlsx    sheet_name=Sheet1
+Library    DataDriver    file=../Resources/Checkoutform.xlsx    sheet_name=Sheet1
 Test Template    Validate the checkout page form
 
 *** Variables ***
@@ -27,21 +27,21 @@ Validate the checkout page form
     addtocartresource.click the add to cart button
     addtocartresource.click the checkout button in the cart
     CheckoutStepOneResource.Fill the checkout details    ${firstname}    ${lastname}    ${zipcode}
-    IF    len('${firstname}') == 0 and len('${lastname}') == 0
-        CheckoutStepOneResource.Verify the get the error message as postcode
-    ELSE IF    len($firstname) == 0 and len($zipcode) == 0
+    IF    '${firstname}' != '' and '${lastname}' == '' and '${zipcode}' == ''
         CheckoutStepOneResource.Verify the get the error message as Lastname
-    ELSE IF    len($zipcode) == 0 and len($lastname) == 0
+    ELSE IF    '${firstname}' != '' and '${lastname}' != '' and '${zipcode}' == ''
+        CheckoutStepOneResource.Verify the get the error message as postcode
+    ELSE IF    '${zipcode}' != '' and '${lastname}' != '' and '${firstname}' == ''
         CheckoutStepOneResource.Verify the get the error message as Firstname 
-    ELSE IF    len($firstname) == 0
+    ELSE IF    '${firstname}' == ''
         CheckoutStepOneResource.Verify the get the error message as Firstname
-    ELSE IF    len($lastname) == 0
+    ELSE IF    '${lastname}' == ''
         CheckoutStepOneResource.Verify the get the error message as Lastname
-    ELSE IF    len($zipcode) == 0
+    ELSE IF    '${zipcode}' == ''
         CheckoutStepOneResource.Verify the get the error message as postcode
-    ELSE IF    len($firstname) == 0 and len($zipcode) == 0 and len($lastname) == 0
-        CheckoutStepOneResource.Verify the get the error message as Firstname
+    ELSE IF    '${firstname}' != '' and '${zipcode}' != '' and '${lastname}' != ''
+        CheckoutStepOneResource.Verify the user go to checkout finish page
     ELSE
-        CheckoutStepOneResource.Verify the user go to checkout finish page     
+        CheckoutStepOneResource.Verify the get the error message as Firstname  
     END
     

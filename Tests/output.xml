@@ -1,1363 +1,1546 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-25T20:07:07.023055" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-26T15:53:58.819402" rpa="false" schemaversion="5">
 <suite id="s1" name="CheckoutStepOneTest" source="C:\Users\Lenovo\Desktop\SauceDemo-Project\Tests\CheckoutStepOneTest.robot">
 <test id="s1-t1" name="Validate the checkout form page" line="20">
 <kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:08.927721" level="INFO">Creating an instance of the Edge WebDriver.</msg>
+<msg time="2025-05-26T15:53:59.930919" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
 <arg>${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-05-25T20:07:08.927263" elapsed="1.884391"/>
+<status status="PASS" start="2025-05-26T15:53:59.930378" elapsed="6.250570"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:10.812316" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<msg time="2025-05-26T15:54:06.181400" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-25T20:07:10.811999" elapsed="2.248382"/>
+<status status="PASS" start="2025-05-26T15:54:06.181196" elapsed="0.883124"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-25T20:07:13.060987" elapsed="0.034895"/>
+<status status="PASS" start="2025-05-26T15:54:07.064604" elapsed="0.290403"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-05-25T20:07:13.096491" elapsed="0.001964"/>
+<status status="PASS" start="2025-05-26T15:54:07.355290" elapsed="0.003569"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:08.925670" elapsed="4.173134"/>
+<status status="PASS" start="2025-05-26T15:53:59.929583" elapsed="7.429438"/>
 </kw>
 <kw name="Validate the checkout page form">
 <kw name="Fill the login form" owner="LoginPageResource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:13.101295" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<msg time="2025-05-26T15:54:07.360796" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
 <arg>id:user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:13.100924" elapsed="0.154335"/>
+<status status="PASS" start="2025-05-26T15:54:07.360447" elapsed="0.115751"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:13.255827" level="INFO">Typing password into text field 'id:password'.</msg>
-<msg time="2025-05-25T20:07:13.291881" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-05-26T15:54:07.476821" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-05-26T15:54:07.483649" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id:password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:13.255553" elapsed="0.083340"/>
+<status status="PASS" start="2025-05-26T15:54:07.476472" elapsed="0.033966"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:13.339203" level="INFO">Clicking button 'id:login-button'.</msg>
+<msg time="2025-05-26T15:54:07.510811" level="INFO">Clicking button 'id:login-button'.</msg>
 <arg>id:login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:13.339045" elapsed="0.093457"/>
+<status status="PASS" start="2025-05-26T15:54:07.510630" elapsed="0.279522"/>
 </kw>
 <arg>username=standard_user</arg>
 <arg>password=secret_sauce</arg>
-<status status="PASS" start="2025-05-25T20:07:13.100492" elapsed="0.332166"/>
+<status status="PASS" start="2025-05-26T15:54:07.360154" elapsed="0.430135"/>
 </kw>
 <kw name="Add the Product to the cart" owner="ProductpageResource">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:13.433822" level="INFO">Clicking element 'xpath://div[contains(text(),'Sauce Labs Bike Light')]'.</msg>
+<msg time="2025-05-26T15:54:07.790988" level="INFO">Clicking element 'xpath://div[contains(text(),'Sauce Labs Bike Light')]'.</msg>
 <arg>${productdog}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:13.433598" elapsed="0.086072"/>
+<status status="PASS" start="2025-05-26T15:54:07.790793" elapsed="0.230283"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:13.520035" level="INFO">Clicking button 'xpath://button[@class='btn btn_primary btn_small btn_inventory']'.</msg>
+<msg time="2025-05-26T15:54:08.022190" level="INFO">Clicking button 'xpath://button[@class='btn btn_primary btn_small btn_inventory']'.</msg>
 <arg>${addtocart}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:13.519826" elapsed="0.066616"/>
+<status status="PASS" start="2025-05-26T15:54:08.021501" elapsed="0.246981"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:13.433096" elapsed="0.153443"/>
+<status status="PASS" start="2025-05-26T15:54:07.790508" elapsed="0.478147"/>
 </kw>
 <kw name="click the add to cart button" owner="addtocartresource">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:13.587108" level="INFO">Clicking element 'xpath://a[@class='shopping_cart_link']'.</msg>
+<msg time="2025-05-26T15:54:08.269665" level="INFO">Clicking element 'xpath://a[@class='shopping_cart_link']'.</msg>
 <arg>${addtocartbtn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:13.586931" elapsed="0.049752"/>
+<status status="PASS" start="2025-05-26T15:54:08.269316" elapsed="0.230252"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:13.586689" elapsed="0.050189"/>
+<status status="PASS" start="2025-05-26T15:54:08.268920" elapsed="0.230894"/>
 </kw>
 <kw name="click the checkout button in the cart" owner="addtocartresource">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:13.637859" level="INFO">Clicking button 'id:checkout'.</msg>
+<msg time="2025-05-26T15:54:08.501220" level="INFO">Clicking button 'id:checkout'.</msg>
 <arg>${checkout}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:13.637643" elapsed="0.087512"/>
+<status status="PASS" start="2025-05-26T15:54:08.500835" elapsed="0.268979"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:13.637312" elapsed="0.088077"/>
+<status status="PASS" start="2025-05-26T15:54:08.500218" elapsed="0.269855"/>
 </kw>
 <kw name="Fill the checkout details" owner="CheckoutStepOneResource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:13.726654" level="INFO">Typing text 'Div' into text field 'id:first-name'.</msg>
+<msg time="2025-05-26T15:54:08.771790" level="INFO">Typing text 'Div' into text field 'id:first-name'.</msg>
 <arg>id:first-name</arg>
 <arg>${firstname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:13.726468" elapsed="0.063031"/>
+<status status="PASS" start="2025-05-26T15:54:08.771277" elapsed="0.076245"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:13.789845" level="INFO">Typing text '' into text field 'id:last-name'.</msg>
+<msg time="2025-05-26T15:54:08.848817" level="INFO">Typing text '' into text field 'id:last-name'.</msg>
 <arg>id:last-name</arg>
 <arg>${lastname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:13.789650" elapsed="0.063406"/>
+<status status="PASS" start="2025-05-26T15:54:08.848227" elapsed="0.031971"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:13.853495" level="INFO">Typing text '' into text field 'id:postal-code'.</msg>
+<msg time="2025-05-26T15:54:08.881691" level="INFO">Typing text '' into text field 'id:postal-code'.</msg>
 <arg>id:postal-code</arg>
 <arg>${zipcode}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:13.853219" elapsed="0.054664"/>
+<status status="PASS" start="2025-05-26T15:54:08.880609" elapsed="0.041132"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:13.908201" level="INFO">Clicking button 'id=continue'.</msg>
+<msg time="2025-05-26T15:54:08.923799" level="INFO">Clicking button 'id=continue'.</msg>
 <arg>id=continue</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:13.908044" elapsed="0.065551"/>
+<status status="PASS" start="2025-05-26T15:54:08.922822" elapsed="0.268929"/>
 </kw>
 <arg>${firstname}</arg>
 <arg>${lastname}</arg>
 <arg>${zipcode}</arg>
-<status status="PASS" start="2025-05-25T20:07:13.725868" elapsed="0.247892"/>
+<status status="PASS" start="2025-05-26T15:54:08.770504" elapsed="0.421479"/>
 </kw>
 <if>
-<branch type="IF" condition="len('${firstname}') == 0 and len('${lastname}') == 0">
-<kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:13.974688" elapsed="0.000074"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:13.974047" elapsed="0.000785"/>
-</branch>
-<branch type="ELSE IF" condition="len($firstname) == 0 and len($zipcode) == 0">
+<branch type="IF" condition="'${firstname}' != '' and '${lastname}' == '' and '${zipcode}' == ''">
 <kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:13.975552" elapsed="0.000062"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:13.974908" elapsed="0.000780"/>
-</branch>
-<branch type="ELSE IF" condition="len($zipcode) == 0 and len($lastname) == 0">
-<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:13.977065" level="INFO">Verifying element 'xpath://h3[@data-test='error']' contains exact text 'Error: First Name is required'.</msg>
-<msg time="2025-05-25T20:07:14.135661" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-64.png"&gt;&lt;img src="selenium-screenshot-64.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-05-25T20:07:14.135950" level="FAIL">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: First Name is required' but it was 'Error: Last Name is required'.</msg>
+<msg time="2025-05-26T15:54:09.193912" level="INFO">Verifying element 'xpath://h3[@data-test='error']' contains exact text 'Error: Last Name is required'.</msg>
 <arg>${error_msg}</arg>
-<arg>expected=Error: First Name is required</arg>
+<arg>expected=Error: Last Name is required</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="FAIL" start="2025-05-25T20:07:13.976756" elapsed="0.166969">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: First Name is required' but it was 'Error: Last Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:54:09.193527" elapsed="0.018459"/>
 </kw>
-<status status="FAIL" start="2025-05-25T20:07:13.976342" elapsed="0.167660">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: First Name is required' but it was 'Error: Last Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:54:09.193045" elapsed="0.019055"/>
 </kw>
-<status status="FAIL" start="2025-05-25T20:07:13.975763" elapsed="0.168297">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: First Name is required' but it was 'Error: Last Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:54:09.192227" elapsed="0.019909"/>
 </branch>
-<branch type="ELSE IF" condition="len($firstname) == 0">
-<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:14.144266" elapsed="0.000025"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:14.144096" elapsed="0.000218"/>
-</branch>
-<branch type="ELSE IF" condition="len($lastname) == 0">
-<kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:14.144443" elapsed="0.000021"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:14.144351" elapsed="0.000136"/>
-</branch>
-<branch type="ELSE IF" condition="len($zipcode) == 0">
+<branch type="ELSE IF" condition="'${firstname}' != '' and '${lastname}' != '' and '${zipcode}' == ''">
 <kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:14.144586" elapsed="0.000018"/>
+<status status="NOT RUN" start="2025-05-26T15:54:09.212383" elapsed="0.000030"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:14.144511" elapsed="0.000115"/>
+<status status="NOT RUN" start="2025-05-26T15:54:09.212193" elapsed="0.000249"/>
 </branch>
-<branch type="ELSE IF" condition="len($firstname) == 0 and len($zipcode) == 0 and len($lastname) == 0">
+<branch type="ELSE IF" condition="'${zipcode}' != '' and '${lastname}' != '' and '${firstname}' == ''">
 <kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:14.144708" elapsed="0.000017"/>
+<status status="NOT RUN" start="2025-05-26T15:54:09.212578" elapsed="0.000023"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:14.144645" elapsed="0.000098"/>
+<status status="NOT RUN" start="2025-05-26T15:54:09.212475" elapsed="0.000154"/>
+</branch>
+<branch type="ELSE IF" condition="'${firstname}' == ''">
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:09.212749" elapsed="0.000191"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:54:09.212655" elapsed="0.000320"/>
+</branch>
+<branch type="ELSE IF" condition="'${lastname}' == ''">
+<kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:09.213125" elapsed="0.000024"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:54:09.213005" elapsed="0.000170"/>
+</branch>
+<branch type="ELSE IF" condition="'${zipcode}' == ''">
+<kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:09.213289" elapsed="0.000020"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:54:09.213201" elapsed="0.000132"/>
+</branch>
+<branch type="ELSE IF" condition="'${firstname}' != '' and '${zipcode}' != '' and '${lastname}' != ''">
+<kw name="Verify the user go to checkout finish page" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:09.213440" elapsed="0.000021"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:54:09.213357" elapsed="0.000129"/>
 </branch>
 <branch type="ELSE">
-<kw name="Verify the user go to checkout finish page" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:14.144827" elapsed="0.000016"/>
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:09.213603" elapsed="0.000023"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:14.144763" elapsed="0.000098"/>
+<status status="NOT RUN" start="2025-05-26T15:54:09.213513" elapsed="0.000138"/>
 </branch>
-<status status="FAIL" start="2025-05-25T20:07:13.973979" elapsed="0.170918">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: First Name is required' but it was 'Error: Last Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:54:09.192150" elapsed="0.021526"/>
 </if>
 <arg>firstname=Div</arg>
 <arg>lastname=</arg>
 <arg>zipcode=</arg>
-<status status="FAIL" start="2025-05-25T20:07:13.099774" elapsed="1.045200">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: First Name is required' but it was 'Error: Last Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:54:07.359720" elapsed="1.854013"/>
 </kw>
 <kw name="Close browser session" owner="GenericResources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-25T20:07:14.145769" elapsed="2.167786"/>
+<status status="PASS" start="2025-05-26T15:54:09.214963" elapsed="3.827343"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:14.145569" elapsed="2.168229"/>
+<status status="PASS" start="2025-05-26T15:54:09.214609" elapsed="3.827968"/>
 </kw>
-<status status="FAIL" start="2025-05-25T20:07:08.922762" elapsed="7.391441">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: First Name is required' but it was 'Error: Last Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:53:59.926908" elapsed="13.116126"/>
 </test>
 <test id="s1-t2" name="Validate the checkout form page" line="20">
 <kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:16.318898" level="INFO">Creating an instance of the Edge WebDriver.</msg>
+<msg time="2025-05-26T15:54:13.048755" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
 <arg>${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-05-25T20:07:16.318605" elapsed="1.523407"/>
+<status status="PASS" start="2025-05-26T15:54:13.048441" elapsed="5.928565"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:17.842721" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<msg time="2025-05-26T15:54:18.977506" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-25T20:07:17.842374" elapsed="0.763317"/>
+<status status="PASS" start="2025-05-26T15:54:18.977271" elapsed="0.783291"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-25T20:07:18.606024" elapsed="0.054209"/>
+<status status="PASS" start="2025-05-26T15:54:19.760837" elapsed="0.277723"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-05-25T20:07:18.660545" elapsed="0.002112"/>
+<status status="PASS" start="2025-05-26T15:54:20.039013" elapsed="0.004024"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:16.318103" elapsed="2.344798"/>
+<status status="PASS" start="2025-05-26T15:54:13.047851" elapsed="6.995347"/>
 </kw>
 <kw name="Validate the checkout page form">
 <kw name="Fill the login form" owner="LoginPageResource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:18.665330" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<msg time="2025-05-26T15:54:20.045063" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
 <arg>id:user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:18.665023" elapsed="0.240956"/>
+<status status="PASS" start="2025-05-26T15:54:20.044759" elapsed="0.138508"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:18.906696" level="INFO">Typing password into text field 'id:password'.</msg>
-<msg time="2025-05-25T20:07:18.967607" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-05-26T15:54:20.183913" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-05-26T15:54:20.193975" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id:password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:18.906294" elapsed="0.179018"/>
+<status status="PASS" start="2025-05-26T15:54:20.183568" elapsed="0.047168"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:19.086379" level="INFO">Clicking button 'id:login-button'.</msg>
+<msg time="2025-05-26T15:54:20.231275" level="INFO">Clicking button 'id:login-button'.</msg>
 <arg>id:login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:19.086054" elapsed="0.178366"/>
+<status status="PASS" start="2025-05-26T15:54:20.231008" elapsed="0.278210"/>
 </kw>
 <arg>username=standard_user</arg>
 <arg>password=secret_sauce</arg>
-<status status="PASS" start="2025-05-25T20:07:18.664527" elapsed="0.600095"/>
+<status status="PASS" start="2025-05-26T15:54:20.044330" elapsed="0.465089"/>
 </kw>
 <kw name="Add the Product to the cart" owner="ProductpageResource">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:19.265740" level="INFO">Clicking element 'xpath://div[contains(text(),'Sauce Labs Bike Light')]'.</msg>
+<msg time="2025-05-26T15:54:20.510515" level="INFO">Clicking element 'xpath://div[contains(text(),'Sauce Labs Bike Light')]'.</msg>
 <arg>${productdog}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:19.265416" elapsed="0.139526"/>
+<status status="PASS" start="2025-05-26T15:54:20.510199" elapsed="0.248320"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:19.405614" level="INFO">Clicking button 'xpath://button[@class='btn btn_primary btn_small btn_inventory']'.</msg>
+<msg time="2025-05-26T15:54:20.759498" level="INFO">Clicking button 'xpath://button[@class='btn btn_primary btn_small btn_inventory']'.</msg>
 <arg>${addtocart}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:19.405242" elapsed="0.136097"/>
+<status status="PASS" start="2025-05-26T15:54:20.758967" elapsed="0.244845"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:19.264950" elapsed="0.276564"/>
+<status status="PASS" start="2025-05-26T15:54:20.509769" elapsed="0.494365"/>
 </kw>
 <kw name="click the add to cart button" owner="addtocartresource">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:19.542808" level="INFO">Clicking element 'xpath://a[@class='shopping_cart_link']'.</msg>
+<msg time="2025-05-26T15:54:21.006091" level="INFO">Clicking element 'xpath://a[@class='shopping_cart_link']'.</msg>
 <arg>${addtocartbtn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:19.542321" elapsed="0.103201"/>
+<status status="PASS" start="2025-05-26T15:54:21.005537" elapsed="0.241647"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:19.541794" elapsed="0.103946"/>
+<status status="PASS" start="2025-05-26T15:54:21.004678" elapsed="0.242769"/>
 </kw>
 <kw name="click the checkout button in the cart" owner="addtocartresource">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:19.647264" level="INFO">Clicking button 'id:checkout'.</msg>
+<msg time="2025-05-26T15:54:21.249160" level="INFO">Clicking button 'id:checkout'.</msg>
 <arg>${checkout}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:19.646903" elapsed="0.116636"/>
+<status status="PASS" start="2025-05-26T15:54:21.248774" elapsed="0.248357"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:19.646356" elapsed="0.117376"/>
+<status status="PASS" start="2025-05-26T15:54:21.248075" elapsed="0.249333"/>
 </kw>
 <kw name="Fill the checkout details" owner="CheckoutStepOneResource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:19.764931" level="INFO">Typing text 'Div' into text field 'id:first-name'.</msg>
+<msg time="2025-05-26T15:54:21.499285" level="INFO">Typing text 'Div' into text field 'id:first-name'.</msg>
 <arg>id:first-name</arg>
 <arg>${firstname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:19.764622" elapsed="0.116535"/>
+<status status="PASS" start="2025-05-26T15:54:21.498859" elapsed="0.067565"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:19.881626" level="INFO">Typing text 'M' into text field 'id:last-name'.</msg>
+<msg time="2025-05-26T15:54:21.567583" level="INFO">Typing text 'M' into text field 'id:last-name'.</msg>
 <arg>id:last-name</arg>
 <arg>${lastname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:19.881377" elapsed="0.103608"/>
+<status status="PASS" start="2025-05-26T15:54:21.566969" elapsed="0.054556"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:19.985407" level="INFO">Typing text '' into text field 'id:postal-code'.</msg>
+<msg time="2025-05-26T15:54:21.622925" level="INFO">Typing text '' into text field 'id:postal-code'.</msg>
 <arg>id:postal-code</arg>
 <arg>${zipcode}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:19.985182" elapsed="0.102308"/>
+<status status="PASS" start="2025-05-26T15:54:21.622094" elapsed="0.037620"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:20.087889" level="INFO">Clicking button 'id=continue'.</msg>
+<msg time="2025-05-26T15:54:21.660217" level="INFO">Clicking button 'id=continue'.</msg>
 <arg>id=continue</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:20.087687" elapsed="0.100205"/>
+<status status="PASS" start="2025-05-26T15:54:21.659974" elapsed="0.229553"/>
 </kw>
 <arg>${firstname}</arg>
 <arg>${lastname}</arg>
 <arg>${zipcode}</arg>
-<status status="PASS" start="2025-05-25T20:07:19.764032" elapsed="0.424004"/>
+<status status="PASS" start="2025-05-26T15:54:21.497865" elapsed="0.393570"/>
 </kw>
 <if>
-<branch type="IF" condition="len('${firstname}') == 0 and len('${lastname}') == 0">
-<kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:20.188572" elapsed="0.000036"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:20.188208" elapsed="0.000437"/>
-</branch>
-<branch type="ELSE IF" condition="len($firstname) == 0 and len($zipcode) == 0">
+<branch type="IF" condition="'${firstname}' != '' and '${lastname}' == '' and '${zipcode}' == ''">
 <kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:20.188933" elapsed="0.000071"/>
+<status status="NOT RUN" start="2025-05-26T15:54:21.894426" elapsed="0.000351"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:20.188681" elapsed="0.000491"/>
+<status status="NOT RUN" start="2025-05-26T15:54:21.892531" elapsed="0.002443"/>
 </branch>
-<branch type="ELSE IF" condition="len($zipcode) == 0 and len($lastname) == 0">
-<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:20.190139" elapsed="0.000048"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:20.189254" elapsed="0.000979"/>
-</branch>
-<branch type="ELSE IF" condition="len($firstname) == 0">
-<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:20.190775" elapsed="0.000061"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:20.190271" elapsed="0.000656"/>
-</branch>
-<branch type="ELSE IF" condition="len($lastname) == 0">
-<kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:20.191575" elapsed="0.000030"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:20.190990" elapsed="0.000651"/>
-</branch>
-<branch type="ELSE IF" condition="len($zipcode) == 0">
+<branch type="ELSE IF" condition="'${firstname}' != '' and '${lastname}' != '' and '${zipcode}' == ''">
 <kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:20.192549" level="INFO">Verifying element 'xpath://h3[@data-test='error']' contains exact text 'Error: Postal Code is required'.</msg>
+<msg time="2025-05-26T15:54:21.897948" level="INFO">Verifying element 'xpath://h3[@data-test='error']' contains exact text 'Error: Postal Code is required'.</msg>
 <arg>${error_msg}</arg>
 <arg>expected=Error: Postal Code is required</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-25T20:07:20.192321" elapsed="0.027531"/>
+<status status="PASS" start="2025-05-26T15:54:21.897279" elapsed="0.023673"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:20.192050" elapsed="0.027921"/>
+<status status="PASS" start="2025-05-26T15:54:21.896456" elapsed="0.024734"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:20.191672" elapsed="0.028336"/>
+<status status="PASS" start="2025-05-26T15:54:21.895364" elapsed="0.025917"/>
 </branch>
-<branch type="ELSE IF" condition="len($firstname) == 0 and len($zipcode) == 0 and len($lastname) == 0">
+<branch type="ELSE IF" condition="'${zipcode}' != '' and '${lastname}' != '' and '${firstname}' == ''">
 <kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:20.220227" elapsed="0.000033"/>
+<status status="NOT RUN" start="2025-05-26T15:54:21.921736" elapsed="0.000071"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:20.220050" elapsed="0.000242"/>
+<status status="NOT RUN" start="2025-05-26T15:54:21.921377" elapsed="0.000507"/>
+</branch>
+<branch type="ELSE IF" condition="'${firstname}' == ''">
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:21.922213" elapsed="0.000063"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:54:21.921965" elapsed="0.000383"/>
+</branch>
+<branch type="ELSE IF" condition="'${lastname}' == ''">
+<kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:21.922663" elapsed="0.000059"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:54:21.922424" elapsed="0.000370"/>
+</branch>
+<branch type="ELSE IF" condition="'${zipcode}' == ''">
+<kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:21.923096" elapsed="0.000057"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:54:21.922867" elapsed="0.000359"/>
+</branch>
+<branch type="ELSE IF" condition="'${firstname}' != '' and '${zipcode}' != '' and '${lastname}' != ''">
+<kw name="Verify the user go to checkout finish page" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:21.923523" elapsed="0.000057"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:54:21.923298" elapsed="0.000353"/>
 </branch>
 <branch type="ELSE">
-<kw name="Verify the user go to checkout finish page" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:20.220437" elapsed="0.000027"/>
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:21.923952" elapsed="0.000059"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:20.220321" elapsed="0.000170"/>
+<status status="NOT RUN" start="2025-05-26T15:54:21.923724" elapsed="0.000359"/>
 </branch>
-<status status="PASS" start="2025-05-25T20:07:20.188174" elapsed="0.032343"/>
+<status status="PASS" start="2025-05-26T15:54:21.891949" elapsed="0.032207"/>
 </if>
 <arg>firstname=Div</arg>
 <arg>lastname=M</arg>
 <arg>zipcode=</arg>
-<status status="PASS" start="2025-05-25T20:07:18.663838" elapsed="1.556729"/>
+<status status="PASS" start="2025-05-26T15:54:20.043827" elapsed="1.880442"/>
 </kw>
 <kw name="Close browser session" owner="GenericResources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-25T20:07:20.221308" elapsed="2.230686"/>
+<status status="PASS" start="2025-05-26T15:54:21.925719" elapsed="2.962944"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:20.221066" elapsed="2.232411"/>
+<status status="PASS" start="2025-05-26T15:54:21.925063" elapsed="2.963936"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:16.315618" elapsed="6.139227"/>
+<status status="PASS" start="2025-05-26T15:54:13.044562" elapsed="11.845113"/>
 </test>
 <test id="s1-t3" name="Validate the checkout form page" line="20">
 <kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:22.485065" level="INFO">Creating an instance of the Edge WebDriver.</msg>
+<msg time="2025-05-26T15:54:24.896942" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
 <arg>${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-05-25T20:07:22.483826" elapsed="1.325680"/>
+<status status="PASS" start="2025-05-26T15:54:24.896685" elapsed="5.928337"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:23.810356" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<msg time="2025-05-26T15:54:30.825535" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-25T20:07:23.810006" elapsed="0.781807"/>
+<status status="PASS" start="2025-05-26T15:54:30.825299" elapsed="0.981965"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-25T20:07:24.592132" elapsed="0.044322"/>
+<status status="PASS" start="2025-05-26T15:54:31.807568" elapsed="0.279735"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-05-25T20:07:24.636911" elapsed="0.001876"/>
+<status status="PASS" start="2025-05-26T15:54:32.087618" elapsed="0.004459"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:22.481450" elapsed="2.157570"/>
+<status status="PASS" start="2025-05-26T15:54:24.896292" elapsed="7.195962"/>
 </kw>
 <kw name="Validate the checkout page form">
 <kw name="Fill the login form" owner="LoginPageResource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:24.643228" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<msg time="2025-05-26T15:54:32.094189" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
 <arg>id:user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:24.642606" elapsed="0.204939"/>
+<status status="PASS" start="2025-05-26T15:54:32.093894" elapsed="0.152479"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:24.848487" level="INFO">Typing password into text field 'id:password'.</msg>
-<msg time="2025-05-25T20:07:24.894545" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-05-26T15:54:32.246938" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-05-26T15:54:32.255595" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id:password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:24.847922" elapsed="0.125439"/>
+<status status="PASS" start="2025-05-26T15:54:32.246651" elapsed="0.051365"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:24.974241" level="INFO">Clicking button 'id:login-button'.</msg>
+<msg time="2025-05-26T15:54:32.298606" level="INFO">Clicking button 'id:login-button'.</msg>
 <arg>id:login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:24.973797" elapsed="0.180392"/>
+<status status="PASS" start="2025-05-26T15:54:32.298323" elapsed="0.278313"/>
 </kw>
 <arg>username=standard_user</arg>
 <arg>password=secret_sauce</arg>
-<status status="PASS" start="2025-05-25T20:07:24.640581" elapsed="0.513853"/>
+<status status="PASS" start="2025-05-26T15:54:32.093421" elapsed="0.483404"/>
 </kw>
 <kw name="Add the Product to the cart" owner="ProductpageResource">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:25.155691" level="INFO">Clicking element 'xpath://div[contains(text(),'Sauce Labs Bike Light')]'.</msg>
+<msg time="2025-05-26T15:54:32.577812" level="INFO">Clicking element 'xpath://div[contains(text(),'Sauce Labs Bike Light')]'.</msg>
 <arg>${productdog}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:25.155221" elapsed="0.111853"/>
+<status status="PASS" start="2025-05-26T15:54:32.577527" elapsed="0.225895"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:25.267617" level="INFO">Clicking button 'xpath://button[@class='btn btn_primary btn_small btn_inventory']'.</msg>
+<msg time="2025-05-26T15:54:32.804251" level="INFO">Clicking button 'xpath://button[@class='btn btn_primary btn_small btn_inventory']'.</msg>
 <arg>${addtocart}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:25.267354" elapsed="0.117848"/>
+<status status="PASS" start="2025-05-26T15:54:32.803805" elapsed="0.229492"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:25.154766" elapsed="0.230568"/>
+<status status="PASS" start="2025-05-26T15:54:32.577111" elapsed="0.456569"/>
 </kw>
 <kw name="click the add to cart button" owner="addtocartresource">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:25.386066" level="INFO">Clicking element 'xpath://a[@class='shopping_cart_link']'.</msg>
+<msg time="2025-05-26T15:54:33.035591" level="INFO">Clicking element 'xpath://a[@class='shopping_cart_link']'.</msg>
 <arg>${addtocartbtn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:25.385861" elapsed="0.076506"/>
+<status status="PASS" start="2025-05-26T15:54:33.035087" elapsed="0.245436"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:25.385537" elapsed="0.077004"/>
+<status status="PASS" start="2025-05-26T15:54:33.034243" elapsed="0.246643"/>
 </kw>
 <kw name="click the checkout button in the cart" owner="addtocartresource">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:25.463686" level="INFO">Clicking button 'id:checkout'.</msg>
+<msg time="2025-05-26T15:54:33.283432" level="INFO">Clicking button 'id:checkout'.</msg>
 <arg>${checkout}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:25.463312" elapsed="0.094422"/>
+<status status="PASS" start="2025-05-26T15:54:33.282776" elapsed="0.285182"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:25.462791" elapsed="0.095202"/>
+<status status="PASS" start="2025-05-26T15:54:33.281445" elapsed="0.286771"/>
 </kw>
 <kw name="Fill the checkout details" owner="CheckoutStepOneResource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:25.559582" level="INFO">Typing text '' into text field 'id:first-name'.</msg>
+<msg time="2025-05-26T15:54:33.570964" level="INFO">Typing text '' into text field 'id:first-name'.</msg>
 <arg>id:first-name</arg>
 <arg>${firstname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:25.559171" elapsed="0.076765"/>
+<status status="PASS" start="2025-05-26T15:54:33.569822" elapsed="0.076412"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:25.636364" level="INFO">Typing text '' into text field 'id:last-name'.</msg>
+<msg time="2025-05-26T15:54:33.646854" level="INFO">Typing text '' into text field 'id:last-name'.</msg>
 <arg>id:last-name</arg>
 <arg>${lastname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:25.636123" elapsed="0.090237"/>
+<status status="PASS" start="2025-05-26T15:54:33.646524" elapsed="0.043875"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:25.727812" level="INFO">Typing text '5145' into text field 'id:postal-code'.</msg>
+<msg time="2025-05-26T15:54:33.690959" level="INFO">Typing text '5145' into text field 'id:postal-code'.</msg>
 <arg>id:postal-code</arg>
 <arg>${zipcode}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:25.726938" elapsed="0.094882"/>
+<status status="PASS" start="2025-05-26T15:54:33.690647" elapsed="0.040823"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:25.822346" level="INFO">Clicking button 'id=continue'.</msg>
+<msg time="2025-05-26T15:54:33.731943" level="INFO">Clicking button 'id=continue'.</msg>
 <arg>id=continue</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:25.822088" elapsed="0.086550"/>
+<status status="PASS" start="2025-05-26T15:54:33.731726" elapsed="0.221203"/>
 </kw>
 <arg>${firstname}</arg>
 <arg>${lastname}</arg>
 <arg>${zipcode}</arg>
-<status status="PASS" start="2025-05-25T20:07:25.558316" elapsed="0.350517"/>
+<status status="PASS" start="2025-05-26T15:54:33.568668" elapsed="0.384575"/>
 </kw>
 <if>
-<branch type="IF" condition="len('${firstname}') == 0 and len('${lastname}') == 0">
+<branch type="IF" condition="'${firstname}' != '' and '${lastname}' == '' and '${zipcode}' == ''">
+<kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:33.955152" elapsed="0.000121"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:54:33.953610" elapsed="0.001799"/>
+</branch>
+<branch type="ELSE IF" condition="'${firstname}' != '' and '${lastname}' != '' and '${zipcode}' == ''">
 <kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:33.956314" elapsed="0.000098"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:54:33.955531" elapsed="0.000999"/>
+</branch>
+<branch type="ELSE IF" condition="'${zipcode}' != '' and '${lastname}' != '' and '${firstname}' == ''">
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:33.957368" elapsed="0.000091"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:54:33.956652" elapsed="0.000917"/>
+</branch>
+<branch type="ELSE IF" condition="'${firstname}' == ''">
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:25.910346" level="INFO">Verifying element 'xpath://h3[@data-test='error']' contains exact text 'Error: Postal Code is required'.</msg>
-<msg time="2025-05-25T20:07:26.086621" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-65.png"&gt;&lt;img src="selenium-screenshot-65.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-05-25T20:07:26.086845" level="FAIL">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Postal Code is required' but it was 'Error: First Name is required'.</msg>
+<msg time="2025-05-26T15:54:33.960429" level="INFO">Verifying element 'xpath://h3[@data-test='error']' contains exact text 'Error: First Name is required'.</msg>
 <arg>${error_msg}</arg>
-<arg>expected=Error: Postal Code is required</arg>
+<arg>expected=Error: First Name is required</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="FAIL" start="2025-05-25T20:07:25.909993" elapsed="0.177851">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Postal Code is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:54:33.959597" elapsed="0.023307"/>
 </kw>
-<status status="FAIL" start="2025-05-25T20:07:25.909544" elapsed="0.178504">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Postal Code is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:54:33.958234" elapsed="0.024841"/>
 </kw>
-<status status="FAIL" start="2025-05-25T20:07:25.909033" elapsed="0.179112">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Postal Code is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:54:33.957681" elapsed="0.025456"/>
 </branch>
-<branch type="ELSE IF" condition="len($firstname) == 0 and len($zipcode) == 0">
+<branch type="ELSE IF" condition="'${lastname}' == ''">
 <kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:26.088502" elapsed="0.000066"/>
+<status status="NOT RUN" start="2025-05-26T15:54:33.983465" elapsed="0.000053"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:26.088217" elapsed="0.000418"/>
+<status status="NOT RUN" start="2025-05-26T15:54:33.983203" elapsed="0.000370"/>
 </branch>
-<branch type="ELSE IF" condition="len($zipcode) == 0 and len($lastname) == 0">
-<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:26.088956" elapsed="0.000056"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:26.088723" elapsed="0.000349"/>
-</branch>
-<branch type="ELSE IF" condition="len($firstname) == 0">
-<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:26.089349" elapsed="0.000055"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:26.089134" elapsed="0.000334"/>
-</branch>
-<branch type="ELSE IF" condition="len($lastname) == 0">
-<kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:26.089753" elapsed="0.000054"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:26.089527" elapsed="0.000337"/>
-</branch>
-<branch type="ELSE IF" condition="len($zipcode) == 0">
+<branch type="ELSE IF" condition="'${zipcode}' == ''">
 <kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:26.090130" elapsed="0.000056"/>
+<status status="NOT RUN" start="2025-05-26T15:54:33.984048" elapsed="0.000091"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:26.089919" elapsed="0.000330"/>
+<status status="NOT RUN" start="2025-05-26T15:54:33.983689" elapsed="0.000557"/>
 </branch>
-<branch type="ELSE IF" condition="len($firstname) == 0 and len($zipcode) == 0 and len($lastname) == 0">
-<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:26.090567" elapsed="0.000041"/>
+<branch type="ELSE IF" condition="'${firstname}' != '' and '${zipcode}' != '' and '${lastname}' != ''">
+<kw name="Verify the user go to checkout finish page" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:33.984704" elapsed="0.000088"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:26.090334" elapsed="0.000322"/>
+<status status="NOT RUN" start="2025-05-26T15:54:33.984355" elapsed="0.000544"/>
 </branch>
 <branch type="ELSE">
-<kw name="Verify the user go to checkout finish page" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:26.090829" elapsed="0.000027"/>
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:33.985352" elapsed="0.000068"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:26.090700" elapsed="0.000186"/>
+<status status="NOT RUN" start="2025-05-26T15:54:33.985011" elapsed="0.000501"/>
 </branch>
-<status status="FAIL" start="2025-05-25T20:07:25.908995" elapsed="0.181924">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Postal Code is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:54:33.953466" elapsed="0.032149"/>
 </if>
 <arg>firstname=</arg>
 <arg>lastname=</arg>
 <arg>zipcode=5145</arg>
-<status status="FAIL" start="2025-05-25T20:07:24.639698" elapsed="1.451327">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Postal Code is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:54:32.092853" elapsed="1.892917"/>
 </kw>
 <kw name="Close browser session" owner="GenericResources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-25T20:07:26.092122" elapsed="2.179269"/>
+<status status="PASS" start="2025-05-26T15:54:33.987242" elapsed="3.029253"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:26.091766" elapsed="2.179991"/>
+<status status="PASS" start="2025-05-26T15:54:33.986688" elapsed="3.030086"/>
 </kw>
-<status status="FAIL" start="2025-05-25T20:07:22.462341" elapsed="5.809753">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Postal Code is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:54:24.892490" elapsed="12.124856"/>
 </test>
 <test id="s1-t4" name="Validate the checkout form page" line="20">
 <kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:28.275889" level="INFO">Creating an instance of the Edge WebDriver.</msg>
+<msg time="2025-05-26T15:54:37.023218" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
 <arg>${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-05-25T20:07:28.275676" elapsed="1.281552"/>
+<status status="PASS" start="2025-05-26T15:54:37.022844" elapsed="5.940587"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:29.557637" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<msg time="2025-05-26T15:54:42.963945" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-25T20:07:29.557465" elapsed="0.815720"/>
+<status status="PASS" start="2025-05-26T15:54:42.963692" elapsed="0.702835"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-25T20:07:30.373611" elapsed="0.045998"/>
+<status status="PASS" start="2025-05-26T15:54:43.666830" elapsed="0.270242"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-05-25T20:07:30.419865" elapsed="0.001533"/>
+<status status="PASS" start="2025-05-26T15:54:43.937366" elapsed="0.003872"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:28.275298" elapsed="2.146259"/>
+<status status="PASS" start="2025-05-26T15:54:37.022254" elapsed="6.919182"/>
 </kw>
 <kw name="Validate the checkout page form">
 <kw name="Fill the login form" owner="LoginPageResource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:30.423814" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<msg time="2025-05-26T15:54:43.943667" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
 <arg>id:user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:30.423501" elapsed="0.166287"/>
+<status status="PASS" start="2025-05-26T15:54:43.943329" elapsed="0.169478"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:30.590685" level="INFO">Typing password into text field 'id:password'.</msg>
-<msg time="2025-05-25T20:07:30.638566" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-05-26T15:54:44.113558" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-05-26T15:54:44.135444" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id:password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:30.590201" elapsed="0.143650"/>
+<status status="PASS" start="2025-05-26T15:54:44.113159" elapsed="0.059221"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:30.734772" level="INFO">Clicking button 'id:login-button'.</msg>
+<msg time="2025-05-26T15:54:44.173208" level="INFO">Clicking button 'id:login-button'.</msg>
 <arg>id:login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:30.734318" elapsed="0.160765"/>
+<status status="PASS" start="2025-05-26T15:54:44.172924" elapsed="0.291340"/>
 </kw>
 <arg>username=standard_user</arg>
 <arg>password=secret_sauce</arg>
-<status status="PASS" start="2025-05-25T20:07:30.422998" elapsed="0.472331"/>
+<status status="PASS" start="2025-05-26T15:54:43.942815" elapsed="0.521638"/>
 </kw>
 <kw name="Add the Product to the cart" owner="ProductpageResource">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:30.896425" level="INFO">Clicking element 'xpath://div[contains(text(),'Sauce Labs Bike Light')]'.</msg>
+<msg time="2025-05-26T15:54:44.465563" level="INFO">Clicking element 'xpath://div[contains(text(),'Sauce Labs Bike Light')]'.</msg>
 <arg>${productdog}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:30.896010" elapsed="0.133489"/>
+<status status="PASS" start="2025-05-26T15:54:44.465269" elapsed="0.222518"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:31.030244" level="INFO">Clicking button 'xpath://button[@class='btn btn_primary btn_small btn_inventory']'.</msg>
+<msg time="2025-05-26T15:54:44.688541" level="INFO">Clicking button 'xpath://button[@class='btn btn_primary btn_small btn_inventory']'.</msg>
 <arg>${addtocart}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:31.029813" elapsed="0.104202"/>
+<status status="PASS" start="2025-05-26T15:54:44.688144" elapsed="0.239741"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:30.895594" elapsed="0.238615"/>
+<status status="PASS" start="2025-05-26T15:54:44.464802" elapsed="0.463290"/>
 </kw>
 <kw name="click the add to cart button" owner="addtocartresource">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:31.135328" level="INFO">Clicking element 'xpath://a[@class='shopping_cart_link']'.</msg>
+<msg time="2025-05-26T15:54:44.929750" level="INFO">Clicking element 'xpath://a[@class='shopping_cart_link']'.</msg>
 <arg>${addtocartbtn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:31.134951" elapsed="0.070322"/>
+<status status="PASS" start="2025-05-26T15:54:44.929274" elapsed="0.243623"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:31.134451" elapsed="0.070989"/>
+<status status="PASS" start="2025-05-26T15:54:44.928495" elapsed="0.244831"/>
 </kw>
 <kw name="click the checkout button in the cart" owner="addtocartresource">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:31.206367" level="INFO">Clicking button 'id:checkout'.</msg>
+<msg time="2025-05-26T15:54:45.175740" level="INFO">Clicking button 'id:checkout'.</msg>
 <arg>${checkout}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:31.206055" elapsed="0.116804"/>
+<status status="PASS" start="2025-05-26T15:54:45.175070" elapsed="0.264120"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:31.205690" elapsed="0.117438"/>
+<status status="PASS" start="2025-05-26T15:54:45.174007" elapsed="0.265508"/>
 </kw>
 <kw name="Fill the checkout details" owner="CheckoutStepOneResource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:31.325230" level="INFO">Typing text 'Div' into text field 'id:first-name'.</msg>
+<msg time="2025-05-26T15:54:45.442106" level="INFO">Typing text 'Div' into text field 'id:first-name'.</msg>
 <arg>id:first-name</arg>
 <arg>${firstname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:31.324559" elapsed="0.121304"/>
+<status status="PASS" start="2025-05-26T15:54:45.441477" elapsed="0.081162"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:31.446977" level="INFO">Typing text '' into text field 'id:last-name'.</msg>
+<msg time="2025-05-26T15:54:45.523972" level="INFO">Typing text '' into text field 'id:last-name'.</msg>
 <arg>id:last-name</arg>
 <arg>${lastname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:31.446465" elapsed="0.088242"/>
+<status status="PASS" start="2025-05-26T15:54:45.523235" elapsed="0.045641"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:31.535302" level="INFO">Typing text '36524' into text field 'id:postal-code'.</msg>
+<msg time="2025-05-26T15:54:45.570119" level="INFO">Typing text '36524' into text field 'id:postal-code'.</msg>
 <arg>id:postal-code</arg>
 <arg>${zipcode}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:31.535003" elapsed="0.103159"/>
+<status status="PASS" start="2025-05-26T15:54:45.569423" elapsed="0.058949"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:31.641165" level="INFO">Clicking button 'id=continue'.</msg>
+<msg time="2025-05-26T15:54:45.628848" level="INFO">Clicking button 'id=continue'.</msg>
 <arg>id=continue</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:31.640131" elapsed="0.109722"/>
+<status status="PASS" start="2025-05-26T15:54:45.628620" elapsed="0.222761"/>
 </kw>
 <arg>${firstname}</arg>
 <arg>${lastname}</arg>
 <arg>${zipcode}</arg>
-<status status="PASS" start="2025-05-25T20:07:31.323504" elapsed="0.426781"/>
+<status status="PASS" start="2025-05-26T15:54:45.440081" elapsed="0.411453"/>
 </kw>
 <if>
-<branch type="IF" condition="len('${firstname}') == 0 and len('${lastname}') == 0">
-<kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:31.751004" elapsed="0.000079"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:31.750480" elapsed="0.000689"/>
-</branch>
-<branch type="ELSE IF" condition="len($firstname) == 0 and len($zipcode) == 0">
+<branch type="IF" condition="'${firstname}' != '' and '${lastname}' == '' and '${zipcode}' == ''">
 <kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:31.751797" elapsed="0.000075"/>
+<status status="NOT RUN" start="2025-05-26T15:54:45.852440" elapsed="0.000055"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:31.751236" elapsed="0.000700"/>
+<status status="NOT RUN" start="2025-05-26T15:54:45.851670" elapsed="0.000885"/>
 </branch>
-<branch type="ELSE IF" condition="len($zipcode) == 0 and len($lastname) == 0">
+<branch type="ELSE IF" condition="'${firstname}' != '' and '${lastname}' != '' and '${zipcode}' == ''">
+<kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:45.852982" elapsed="0.000044"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:54:45.852610" elapsed="0.000497"/>
+</branch>
+<branch type="ELSE IF" condition="'${zipcode}' != '' and '${lastname}' != '' and '${firstname}' == ''">
 <kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:31.752356" elapsed="0.000047"/>
+<status status="NOT RUN" start="2025-05-26T15:54:45.853518" elapsed="0.000062"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:31.751999" elapsed="0.000470"/>
+<status status="NOT RUN" start="2025-05-26T15:54:45.853160" elapsed="0.000493"/>
 </branch>
-<branch type="ELSE IF" condition="len($firstname) == 0">
+<branch type="ELSE IF" condition="'${firstname}' == ''">
 <kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:31.752948" elapsed="0.000064"/>
+<status status="NOT RUN" start="2025-05-26T15:54:45.854314" elapsed="0.000064"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:31.752519" elapsed="0.000550"/>
+<status status="NOT RUN" start="2025-05-26T15:54:45.853791" elapsed="0.000652"/>
 </branch>
-<branch type="ELSE IF" condition="len($lastname) == 0">
+<branch type="ELSE IF" condition="'${lastname}' == ''">
 <kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:31.754950" level="INFO">Verifying element 'xpath://h3[@data-test='error']' contains exact text 'Error: Last Name is required'.</msg>
+<msg time="2025-05-26T15:54:45.855746" level="INFO">Verifying element 'xpath://h3[@data-test='error']' contains exact text 'Error: Last Name is required'.</msg>
 <arg>${error_msg}</arg>
 <arg>expected=Error: Last Name is required</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-25T20:07:31.754365" elapsed="0.033940"/>
+<status status="PASS" start="2025-05-26T15:54:45.855365" elapsed="0.014186"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:31.753515" elapsed="0.034900"/>
+<status status="PASS" start="2025-05-26T15:54:45.854865" elapsed="0.014868"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:31.753119" elapsed="0.035330"/>
+<status status="PASS" start="2025-05-26T15:54:45.854500" elapsed="0.015371"/>
 </branch>
-<branch type="ELSE IF" condition="len($zipcode) == 0">
+<branch type="ELSE IF" condition="'${zipcode}' == ''">
 <kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:31.788718" elapsed="0.000033"/>
+<status status="NOT RUN" start="2025-05-26T15:54:45.870241" elapsed="0.000087"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:31.788522" elapsed="0.000259"/>
+<status status="NOT RUN" start="2025-05-26T15:54:45.869958" elapsed="0.000425"/>
 </branch>
-<branch type="ELSE IF" condition="len($firstname) == 0 and len($zipcode) == 0 and len($lastname) == 0">
-<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:31.788910" elapsed="0.000023"/>
+<branch type="ELSE IF" condition="'${firstname}' != '' and '${zipcode}' != '' and '${lastname}' != ''">
+<kw name="Verify the user go to checkout finish page" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:45.870773" elapsed="0.000063"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:31.788810" elapsed="0.000150"/>
+<status status="NOT RUN" start="2025-05-26T15:54:45.870435" elapsed="0.000464"/>
 </branch>
 <branch type="ELSE">
-<kw name="Verify the user go to checkout finish page" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:31.789076" elapsed="0.000022"/>
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:45.871129" elapsed="0.000040"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:31.788987" elapsed="0.000135"/>
+<status status="NOT RUN" start="2025-05-26T15:54:45.870952" elapsed="0.000265"/>
 </branch>
-<status status="PASS" start="2025-05-25T20:07:31.750407" elapsed="0.038740"/>
+<status status="PASS" start="2025-05-26T15:54:45.851637" elapsed="0.019624"/>
 </if>
 <arg>firstname=Div</arg>
 <arg>lastname=</arg>
 <arg>zipcode=36524</arg>
-<status status="PASS" start="2025-05-25T20:07:30.422256" elapsed="1.366938"/>
+<status status="PASS" start="2025-05-26T15:54:43.942178" elapsed="1.929211"/>
 </kw>
 <kw name="Close browser session" owner="GenericResources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-25T20:07:31.790487" elapsed="2.173699"/>
+<status status="PASS" start="2025-05-26T15:54:45.872417" elapsed="3.006067"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:31.789978" elapsed="2.174459"/>
+<status status="PASS" start="2025-05-26T15:54:45.871996" elapsed="3.006733"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:28.273481" elapsed="5.691281"/>
+<status status="PASS" start="2025-05-26T15:54:37.019129" elapsed="11.860120"/>
 </test>
 <test id="s1-t5" name="Validate the checkout form page" line="20">
 <kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:33.967012" level="INFO">Creating an instance of the Edge WebDriver.</msg>
+<msg time="2025-05-26T15:54:48.885624" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
 <arg>${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-05-25T20:07:33.966879" elapsed="1.345739"/>
+<status status="PASS" start="2025-05-26T15:54:48.885184" elapsed="5.851865"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:35.313265" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<msg time="2025-05-26T15:54:54.737591" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-25T20:07:35.312958" elapsed="0.793375"/>
+<status status="PASS" start="2025-05-26T15:54:54.737341" elapsed="0.791470"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-25T20:07:36.106932" elapsed="0.043107"/>
+<status status="PASS" start="2025-05-26T15:54:55.529101" elapsed="0.290733"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-05-25T20:07:36.150399" elapsed="0.002136"/>
+<status status="PASS" start="2025-05-26T15:54:55.820129" elapsed="0.004181"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:33.966635" elapsed="2.186102"/>
+<status status="PASS" start="2025-05-26T15:54:48.884342" elapsed="6.940167"/>
 </kw>
 <kw name="Validate the checkout page form">
 <kw name="Fill the login form" owner="LoginPageResource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:36.155633" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<msg time="2025-05-26T15:54:55.827327" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
 <arg>id:user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:36.155149" elapsed="0.155363"/>
+<status status="PASS" start="2025-05-26T15:54:55.826289" elapsed="0.153210"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:36.311364" level="INFO">Typing password into text field 'id:password'.</msg>
-<msg time="2025-05-25T20:07:36.357593" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-05-26T15:54:55.980124" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-05-26T15:54:55.988386" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id:password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:36.310976" elapsed="0.115253"/>
+<status status="PASS" start="2025-05-26T15:54:55.979783" elapsed="0.047358"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:36.426793" level="INFO">Clicking button 'id:login-button'.</msg>
+<msg time="2025-05-26T15:54:56.027683" level="INFO">Clicking button 'id:login-button'.</msg>
 <arg>id:login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:36.426518" elapsed="0.135381"/>
+<status status="PASS" start="2025-05-26T15:54:56.027416" elapsed="0.276584"/>
 </kw>
 <arg>username=standard_user</arg>
 <arg>password=secret_sauce</arg>
-<status status="PASS" start="2025-05-25T20:07:36.154186" elapsed="0.407890"/>
+<status status="PASS" start="2025-05-26T15:54:55.825794" elapsed="0.478452"/>
 </kw>
 <kw name="Add the Product to the cart" owner="ProductpageResource">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:36.563035" level="INFO">Clicking element 'xpath://div[contains(text(),'Sauce Labs Bike Light')]'.</msg>
+<msg time="2025-05-26T15:54:56.305336" level="INFO">Clicking element 'xpath://div[contains(text(),'Sauce Labs Bike Light')]'.</msg>
 <arg>${productdog}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:36.562760" elapsed="0.110657"/>
+<status status="PASS" start="2025-05-26T15:54:56.305020" elapsed="0.222630"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:36.674132" level="INFO">Clicking button 'xpath://button[@class='btn btn_primary btn_small btn_inventory']'.</msg>
+<msg time="2025-05-26T15:54:56.528199" level="INFO">Clicking button 'xpath://button[@class='btn btn_primary btn_small btn_inventory']'.</msg>
 <arg>${addtocart}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:36.673755" elapsed="0.110899"/>
+<status status="PASS" start="2025-05-26T15:54:56.527914" elapsed="0.221316"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:36.562354" elapsed="0.222420"/>
+<status status="PASS" start="2025-05-26T15:54:56.304543" elapsed="0.445027"/>
 </kw>
 <kw name="click the add to cart button" owner="addtocartresource">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:36.785396" level="INFO">Clicking element 'xpath://a[@class='shopping_cart_link']'.</msg>
+<msg time="2025-05-26T15:54:56.751055" level="INFO">Clicking element 'xpath://a[@class='shopping_cart_link']'.</msg>
 <arg>${addtocartbtn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:36.785221" elapsed="0.068768"/>
+<status status="PASS" start="2025-05-26T15:54:56.750634" elapsed="0.246462"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:36.784944" elapsed="0.069275"/>
+<status status="PASS" start="2025-05-26T15:54:56.749979" elapsed="0.247383"/>
 </kw>
 <kw name="click the checkout button in the cart" owner="addtocartresource">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:36.855395" level="INFO">Clicking button 'id:checkout'.</msg>
+<msg time="2025-05-26T15:54:56.998953" level="INFO">Clicking button 'id:checkout'.</msg>
 <arg>${checkout}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:36.854934" elapsed="0.112848"/>
+<status status="PASS" start="2025-05-26T15:54:56.998422" elapsed="0.239842"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:36.854483" elapsed="0.113593"/>
+<status status="PASS" start="2025-05-26T15:54:56.997754" elapsed="0.240876"/>
 </kw>
 <kw name="Fill the checkout details" owner="CheckoutStepOneResource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:36.969940" level="INFO">Typing text '' into text field 'id:first-name'.</msg>
+<msg time="2025-05-26T15:54:57.241379" level="INFO">Typing text '' into text field 'id:first-name'.</msg>
 <arg>id:first-name</arg>
 <arg>${firstname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:36.969571" elapsed="0.119435"/>
+<status status="PASS" start="2025-05-26T15:54:57.240668" elapsed="0.073114"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:37.089406" level="INFO">Typing text '' into text field 'id:last-name'.</msg>
+<msg time="2025-05-26T15:54:57.315013" level="INFO">Typing text 'M' into text field 'id:last-name'.</msg>
 <arg>id:last-name</arg>
 <arg>${lastname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:37.089185" elapsed="0.116584"/>
+<status status="PASS" start="2025-05-26T15:54:57.314343" elapsed="0.053029"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:37.206356" level="INFO">Typing text '' into text field 'id:postal-code'.</msg>
+<msg time="2025-05-26T15:54:57.368380" level="INFO">Typing text '' into text field 'id:postal-code'.</msg>
 <arg>id:postal-code</arg>
 <arg>${zipcode}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:37.205996" elapsed="0.112260"/>
+<status status="PASS" start="2025-05-26T15:54:57.367840" elapsed="0.046309"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:37.319602" level="INFO">Clicking button 'id=continue'.</msg>
+<msg time="2025-05-26T15:54:57.415177" level="INFO">Clicking button 'id=continue'.</msg>
 <arg>id=continue</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:37.319141" elapsed="0.102819"/>
+<status status="PASS" start="2025-05-26T15:54:57.414681" elapsed="0.227702"/>
 </kw>
 <arg>${firstname}</arg>
 <arg>${lastname}</arg>
 <arg>${zipcode}</arg>
-<status status="PASS" start="2025-05-25T20:07:36.968702" elapsed="0.453486"/>
+<status status="PASS" start="2025-05-26T15:54:57.239235" elapsed="0.403475"/>
 </kw>
 <if>
-<branch type="IF" condition="len('${firstname}') == 0 and len('${lastname}') == 0">
+<branch type="IF" condition="'${firstname}' != '' and '${lastname}' == '' and '${zipcode}' == ''">
+<kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:57.644013" elapsed="0.000129"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:54:57.643008" elapsed="0.001261"/>
+</branch>
+<branch type="ELSE IF" condition="'${firstname}' != '' and '${lastname}' != '' and '${zipcode}' == ''">
 <kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:57.645296" elapsed="0.000117"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:54:57.644399" elapsed="0.001139"/>
+</branch>
+<branch type="ELSE IF" condition="'${zipcode}' != '' and '${lastname}' != '' and '${firstname}' == ''">
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:57.646445" elapsed="0.000118"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:54:57.645657" elapsed="0.001018"/>
+</branch>
+<branch type="ELSE IF" condition="'${firstname}' == ''">
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:37.424464" level="INFO">Verifying element 'xpath://h3[@data-test='error']' contains exact text 'Error: Postal Code is required'.</msg>
-<msg time="2025-05-25T20:07:37.602258" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-66.png"&gt;&lt;img src="selenium-screenshot-66.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-05-25T20:07:37.602527" level="FAIL">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Postal Code is required' but it was 'Error: First Name is required'.</msg>
+<msg time="2025-05-26T15:54:57.648774" level="INFO">Verifying element 'xpath://h3[@data-test='error']' contains exact text 'Error: First Name is required'.</msg>
 <arg>${error_msg}</arg>
-<arg>expected=Error: Postal Code is required</arg>
+<arg>expected=Error: First Name is required</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="FAIL" start="2025-05-25T20:07:37.423877" elapsed="0.179827">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Postal Code is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:54:57.648113" elapsed="0.025132"/>
 </kw>
-<status status="FAIL" start="2025-05-25T20:07:37.423162" elapsed="0.180771">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Postal Code is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:54:57.647370" elapsed="0.026243"/>
 </kw>
-<status status="FAIL" start="2025-05-25T20:07:37.422449" elapsed="0.181681">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Postal Code is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:54:57.646785" elapsed="0.027014"/>
 </branch>
-<branch type="ELSE IF" condition="len($firstname) == 0 and len($zipcode) == 0">
+<branch type="ELSE IF" condition="'${lastname}' == ''">
 <kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:37.604408" elapsed="0.000032"/>
+<status status="NOT RUN" start="2025-05-26T15:54:57.674647" elapsed="0.000170"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:37.604214" elapsed="0.000264"/>
+<status status="NOT RUN" start="2025-05-26T15:54:57.673978" elapsed="0.000981"/>
 </branch>
-<branch type="ELSE IF" condition="len($zipcode) == 0 and len($lastname) == 0">
-<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:37.604658" elapsed="0.000028"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:37.604509" elapsed="0.000205"/>
-</branch>
-<branch type="ELSE IF" condition="len($firstname) == 0">
-<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:37.604837" elapsed="0.000022"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:37.604741" elapsed="0.000146"/>
-</branch>
-<branch type="ELSE IF" condition="len($lastname) == 0">
-<kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:37.604996" elapsed="0.000024"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:37.604912" elapsed="0.000141"/>
-</branch>
-<branch type="ELSE IF" condition="len($zipcode) == 0">
+<branch type="ELSE IF" condition="'${zipcode}' == ''">
 <kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:37.605220" elapsed="0.000032"/>
+<status status="NOT RUN" start="2025-05-26T15:54:57.676023" elapsed="0.000139"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:37.605087" elapsed="0.000198"/>
+<status status="NOT RUN" start="2025-05-26T15:54:57.675099" elapsed="0.001209"/>
 </branch>
-<branch type="ELSE IF" condition="len($firstname) == 0 and len($zipcode) == 0 and len($lastname) == 0">
-<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:37.605428" elapsed="0.000028"/>
+<branch type="ELSE IF" condition="'${firstname}' != '' and '${zipcode}' != '' and '${lastname}' != ''">
+<kw name="Verify the user go to checkout finish page" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:57.676862" elapsed="0.000099"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:37.605318" elapsed="0.000171"/>
+<status status="NOT RUN" start="2025-05-26T15:54:57.676444" elapsed="0.000718"/>
 </branch>
 <branch type="ELSE">
-<kw name="Verify the user go to checkout finish page" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:37.605659" elapsed="0.000031"/>
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:54:57.677710" elapsed="0.000111"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:37.605524" elapsed="0.000199"/>
+<status status="NOT RUN" start="2025-05-26T15:54:57.677301" elapsed="0.000655"/>
 </branch>
-<status status="FAIL" start="2025-05-25T20:07:37.422335" elapsed="0.183425">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Postal Code is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:54:57.642936" elapsed="0.035251"/>
 </if>
 <arg>firstname=</arg>
-<arg>lastname=</arg>
+<arg>lastname=M</arg>
 <arg>zipcode=</arg>
-<status status="FAIL" start="2025-05-25T20:07:36.153538" elapsed="1.452351">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Postal Code is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:54:55.825204" elapsed="1.853238"/>
 </kw>
 <kw name="Close browser session" owner="GenericResources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-25T20:07:37.607158" elapsed="2.188536"/>
+<status status="PASS" start="2025-05-26T15:54:57.680104" elapsed="3.010483"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:37.606621" elapsed="2.189329"/>
+<status status="PASS" start="2025-05-26T15:54:57.679259" elapsed="3.011597"/>
 </kw>
-<status status="FAIL" start="2025-05-25T20:07:33.965372" elapsed="5.830984">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Postal Code is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:54:48.881061" elapsed="11.810136"/>
 </test>
 <test id="s1-t6" name="Validate the checkout form page" line="20">
 <kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:39.801160" level="INFO">Creating an instance of the Edge WebDriver.</msg>
+<msg time="2025-05-26T15:55:00.697438" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
 <arg>${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-05-25T20:07:39.800884" elapsed="2.143621"/>
+<status status="PASS" start="2025-05-26T15:55:00.697165" elapsed="5.980420"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:41.945140" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<msg time="2025-05-26T15:55:06.678177" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-25T20:07:41.944824" elapsed="1.349526"/>
+<status status="PASS" start="2025-05-26T15:55:06.677911" elapsed="0.783015"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-25T20:07:43.294597" elapsed="0.038395"/>
+<status status="PASS" start="2025-05-26T15:55:07.461201" elapsed="0.292142"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-05-25T20:07:43.333221" elapsed="0.001223"/>
+<status status="PASS" start="2025-05-26T15:55:07.753669" elapsed="0.026043"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:39.800381" elapsed="3.534236"/>
+<status status="PASS" start="2025-05-26T15:55:00.696695" elapsed="7.083251"/>
 </kw>
 <kw name="Validate the checkout page form">
 <kw name="Fill the login form" owner="LoginPageResource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:43.336123" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<msg time="2025-05-26T15:55:07.782117" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
 <arg>id:user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:43.335906" elapsed="0.609575"/>
+<status status="PASS" start="2025-05-26T15:55:07.781817" elapsed="0.108332"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:43.946136" level="INFO">Typing password into text field 'id:password'.</msg>
-<msg time="2025-05-25T20:07:43.992252" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-05-26T15:55:07.890846" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-05-26T15:55:07.898374" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id:password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:43.945791" elapsed="0.113834"/>
+<status status="PASS" start="2025-05-26T15:55:07.890469" elapsed="0.052669"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:44.060044" level="INFO">Clicking button 'id:login-button'.</msg>
+<msg time="2025-05-26T15:55:07.943678" level="INFO">Clicking button 'id:login-button'.</msg>
 <arg>id:login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:44.059856" elapsed="0.115037"/>
+<status status="PASS" start="2025-05-26T15:55:07.943416" elapsed="0.303232"/>
 </kw>
 <arg>username=standard_user</arg>
 <arg>password=secret_sauce</arg>
-<status status="PASS" start="2025-05-25T20:07:43.335613" elapsed="0.839422"/>
+<status status="PASS" start="2025-05-26T15:55:07.781351" elapsed="0.465484"/>
 </kw>
 <kw name="Add the Product to the cart" owner="ProductpageResource">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:44.176045" level="INFO">Clicking element 'xpath://div[contains(text(),'Sauce Labs Bike Light')]'.</msg>
+<msg time="2025-05-26T15:55:08.247893" level="INFO">Clicking element 'xpath://div[contains(text(),'Sauce Labs Bike Light')]'.</msg>
 <arg>${productdog}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:44.175813" elapsed="0.086221"/>
+<status status="PASS" start="2025-05-26T15:55:08.247559" elapsed="0.222970"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:44.262557" level="INFO">Clicking button 'xpath://button[@class='btn btn_primary btn_small btn_inventory']'.</msg>
+<msg time="2025-05-26T15:55:08.471123" level="INFO">Clicking button 'xpath://button[@class='btn btn_primary btn_small btn_inventory']'.</msg>
 <arg>${addtocart}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:44.262288" elapsed="0.081991"/>
+<status status="PASS" start="2025-05-26T15:55:08.470815" elapsed="0.226178"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:44.175439" elapsed="0.168959"/>
+<status status="PASS" start="2025-05-26T15:55:08.247134" elapsed="0.450114"/>
 </kw>
 <kw name="click the add to cart button" owner="addtocartresource">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:44.345011" level="INFO">Clicking element 'xpath://a[@class='shopping_cart_link']'.</msg>
+<msg time="2025-05-26T15:55:08.698843" level="INFO">Clicking element 'xpath://a[@class='shopping_cart_link']'.</msg>
 <arg>${addtocartbtn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:44.344837" elapsed="0.064299"/>
+<status status="PASS" start="2025-05-26T15:55:08.698199" elapsed="0.240378"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:44.344565" elapsed="0.064712"/>
+<status status="PASS" start="2025-05-26T15:55:08.697633" elapsed="0.241340"/>
 </kw>
 <kw name="click the checkout button in the cart" owner="addtocartresource">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:44.409902" level="INFO">Clicking button 'id:checkout'.</msg>
+<msg time="2025-05-26T15:55:08.941130" level="INFO">Clicking button 'id:checkout'.</msg>
 <arg>${checkout}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:44.409733" elapsed="0.084338"/>
+<status status="PASS" start="2025-05-26T15:55:08.940530" elapsed="0.245310"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:44.409449" elapsed="0.084736"/>
+<status status="PASS" start="2025-05-26T15:55:08.939579" elapsed="0.246621"/>
 </kw>
 <kw name="Fill the checkout details" owner="CheckoutStepOneResource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:44.494908" level="INFO">Typing text '' into text field 'id:first-name'.</msg>
+<msg time="2025-05-26T15:55:09.188780" level="INFO">Typing text '' into text field 'id:first-name'.</msg>
 <arg>id:first-name</arg>
 <arg>${firstname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:44.494731" elapsed="0.072077"/>
+<status status="PASS" start="2025-05-26T15:55:09.188086" elapsed="0.078544"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:44.567274" level="INFO">Typing text 'M' into text field 'id:last-name'.</msg>
+<msg time="2025-05-26T15:55:09.267669" level="INFO">Typing text '' into text field 'id:last-name'.</msg>
 <arg>id:last-name</arg>
 <arg>${lastname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:44.567028" elapsed="0.077753"/>
+<status status="PASS" start="2025-05-26T15:55:09.267196" elapsed="0.046915"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:44.645188" level="INFO">Typing text '' into text field 'id:postal-code'.</msg>
+<msg time="2025-05-26T15:55:09.315124" level="INFO">Typing text '' into text field 'id:postal-code'.</msg>
 <arg>id:postal-code</arg>
 <arg>${zipcode}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:44.644960" elapsed="0.067600"/>
+<status status="PASS" start="2025-05-26T15:55:09.314583" elapsed="0.033259"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:44.713687" level="INFO">Clicking button 'id=continue'.</msg>
+<msg time="2025-05-26T15:55:09.348586" level="INFO">Clicking button 'id=continue'.</msg>
 <arg>id=continue</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:44.712973" elapsed="0.079803"/>
+<status status="PASS" start="2025-05-26T15:55:09.348231" elapsed="0.230905"/>
 </kw>
 <arg>${firstname}</arg>
 <arg>${lastname}</arg>
 <arg>${zipcode}</arg>
-<status status="PASS" start="2025-05-25T20:07:44.494372" elapsed="0.298622"/>
+<status status="PASS" start="2025-05-26T15:55:09.186797" elapsed="0.392490"/>
 </kw>
 <if>
-<branch type="IF" condition="len('${firstname}') == 0 and len('${lastname}') == 0">
-<kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:44.793598" elapsed="0.000037"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:44.793203" elapsed="0.000467"/>
-</branch>
-<branch type="ELSE IF" condition="len($firstname) == 0 and len($zipcode) == 0">
+<branch type="IF" condition="'${firstname}' != '' and '${lastname}' == '' and '${zipcode}' == ''">
 <kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:55:09.579893" elapsed="0.000046"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:55:09.579458" elapsed="0.000551"/>
+</branch>
+<branch type="ELSE IF" condition="'${firstname}' != '' and '${lastname}' != '' and '${zipcode}' == ''">
+<kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:55:09.580645" elapsed="0.000061"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:55:09.580141" elapsed="0.000641"/>
+</branch>
+<branch type="ELSE IF" condition="'${zipcode}' != '' and '${lastname}' != '' and '${firstname}' == ''">
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:55:09.581349" elapsed="0.000059"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:55:09.580882" elapsed="0.000598"/>
+</branch>
+<branch type="ELSE IF" condition="'${firstname}' == ''">
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:44.794371" level="INFO">Verifying element 'xpath://h3[@data-test='error']' contains exact text 'Error: Last Name is required'.</msg>
-<msg time="2025-05-25T20:07:45.599832" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-67.png"&gt;&lt;img src="selenium-screenshot-67.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-05-25T20:07:45.600047" level="FAIL">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Last Name is required' but it was 'Error: First Name is required'.</msg>
+<msg time="2025-05-26T15:55:09.583033" level="INFO">Verifying element 'xpath://h3[@data-test='error']' contains exact text 'Error: First Name is required'.</msg>
 <arg>${error_msg}</arg>
-<arg>expected=Error: Last Name is required</arg>
+<arg>expected=Error: First Name is required</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="FAIL" start="2025-05-25T20:07:44.794179" elapsed="0.806947">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Last Name is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:55:09.582669" elapsed="0.014022"/>
 </kw>
-<status status="FAIL" start="2025-05-25T20:07:44.793951" elapsed="0.807373">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Last Name is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:55:09.582192" elapsed="0.015042"/>
 </kw>
-<status status="FAIL" start="2025-05-25T20:07:44.793704" elapsed="0.807705">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Last Name is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:55:09.581555" elapsed="0.015873"/>
 </branch>
-<branch type="ELSE IF" condition="len($zipcode) == 0 and len($lastname) == 0">
-<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:45.601653" elapsed="0.000033"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:45.601457" elapsed="0.000260"/>
-</branch>
-<branch type="ELSE IF" condition="len($firstname) == 0">
-<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:45.601904" elapsed="0.000041"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:45.601749" elapsed="0.000240"/>
-</branch>
-<branch type="ELSE IF" condition="len($lastname) == 0">
+<branch type="ELSE IF" condition="'${lastname}' == ''">
 <kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:45.602188" elapsed="0.000042"/>
+<status status="NOT RUN" start="2025-05-26T15:55:09.598019" elapsed="0.000070"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:45.602032" elapsed="0.000243"/>
+<status status="NOT RUN" start="2025-05-26T15:55:09.597522" elapsed="0.000629"/>
 </branch>
-<branch type="ELSE IF" condition="len($zipcode) == 0">
+<branch type="ELSE IF" condition="'${zipcode}' == ''">
 <kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:45.602503" elapsed="0.000038"/>
+<status status="NOT RUN" start="2025-05-26T15:55:09.598394" elapsed="0.000048"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:45.602340" elapsed="0.000244"/>
+<status status="NOT RUN" start="2025-05-26T15:55:09.598207" elapsed="0.000286"/>
 </branch>
-<branch type="ELSE IF" condition="len($firstname) == 0 and len($zipcode) == 0 and len($lastname) == 0">
-<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:45.602767" elapsed="0.000039"/>
+<branch type="ELSE IF" condition="'${firstname}' != '' and '${zipcode}' != '' and '${lastname}' != ''">
+<kw name="Verify the user go to checkout finish page" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:55:09.598745" elapsed="0.000051"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:45.602624" elapsed="0.000223"/>
+<status status="NOT RUN" start="2025-05-26T15:55:09.598543" elapsed="0.000305"/>
 </branch>
 <branch type="ELSE">
-<kw name="Verify the user go to checkout finish page" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:45.603025" elapsed="0.000039"/>
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:55:09.599055" elapsed="0.000045"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:45.602885" elapsed="0.000221"/>
+<status status="NOT RUN" start="2025-05-26T15:55:09.598898" elapsed="0.000249"/>
 </branch>
-<status status="FAIL" start="2025-05-25T20:07:44.793158" elapsed="0.809992">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Last Name is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:55:09.579421" elapsed="0.019773"/>
 </if>
 <arg>firstname=</arg>
-<arg>lastname=M</arg>
+<arg>lastname=</arg>
 <arg>zipcode=</arg>
-<status status="FAIL" start="2025-05-25T20:07:43.335228" elapsed="2.268070">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Last Name is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:55:07.780763" elapsed="1.818520"/>
 </kw>
 <kw name="Close browser session" owner="GenericResources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-25T20:07:45.604622" elapsed="2.322753"/>
+<status status="PASS" start="2025-05-26T15:55:09.600131" elapsed="2.988866"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:45.604057" elapsed="2.323516"/>
+<status status="PASS" start="2025-05-26T15:55:09.599768" elapsed="2.989561"/>
 </kw>
-<status status="FAIL" start="2025-05-25T20:07:39.797603" elapsed="8.130337">The text of element 'xpath://h3[@data-test='error']' should have been 'Error: Last Name is required' but it was 'Error: First Name is required'.</status>
+<status status="PASS" start="2025-05-26T15:55:00.693783" elapsed="11.896122"/>
 </test>
 <test id="s1-t7" name="Validate the checkout form page" line="20">
 <kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:47.931557" level="INFO">Creating an instance of the Edge WebDriver.</msg>
+<msg time="2025-05-26T15:55:12.596508" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
 <arg>${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-05-25T20:07:47.931336" elapsed="1.477435"/>
+<status status="PASS" start="2025-05-26T15:55:12.596142" elapsed="5.947311"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:49.409215" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<msg time="2025-05-26T15:55:18.544034" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-25T20:07:49.409014" elapsed="1.301429"/>
+<status status="PASS" start="2025-05-26T15:55:18.543787" elapsed="0.766013"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-25T20:07:50.710661" elapsed="0.038304"/>
+<status status="PASS" start="2025-05-26T15:55:19.310127" elapsed="0.276607"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-05-25T20:07:50.749295" elapsed="0.001444"/>
+<status status="PASS" start="2025-05-26T15:55:19.587043" elapsed="0.004683"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:47.930591" elapsed="2.820322"/>
+<status status="PASS" start="2025-05-26T15:55:12.595488" elapsed="6.996409"/>
 </kw>
 <kw name="Validate the checkout page form">
 <kw name="Fill the login form" owner="LoginPageResource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:50.753237" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<msg time="2025-05-26T15:55:19.593852" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
 <arg>id:user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:50.752912" elapsed="0.165582"/>
+<status status="PASS" start="2025-05-26T15:55:19.593557" elapsed="0.098973"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:50.919149" level="INFO">Typing password into text field 'id:password'.</msg>
-<msg time="2025-05-25T20:07:50.963894" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2025-05-26T15:55:19.693184" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-05-26T15:55:19.699383" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id:password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:50.918810" elapsed="0.129209"/>
+<status status="PASS" start="2025-05-26T15:55:19.692846" elapsed="0.025197"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:51.048698" level="INFO">Clicking button 'id:login-button'.</msg>
+<msg time="2025-05-26T15:55:19.718604" level="INFO">Clicking button 'id:login-button'.</msg>
 <arg>id:login-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:51.048354" elapsed="0.094028"/>
+<status status="PASS" start="2025-05-26T15:55:19.718334" elapsed="0.261345"/>
 </kw>
 <arg>username=standard_user</arg>
 <arg>password=secret_sauce</arg>
-<status status="PASS" start="2025-05-25T20:07:50.752399" elapsed="0.390092"/>
+<status status="PASS" start="2025-05-26T15:55:19.593102" elapsed="0.386761"/>
 </kw>
 <kw name="Add the Product to the cart" owner="ProductpageResource">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:51.143081" level="INFO">Clicking element 'xpath://div[contains(text(),'Sauce Labs Bike Light')]'.</msg>
+<msg time="2025-05-26T15:55:19.980870" level="INFO">Clicking element 'xpath://div[contains(text(),'Sauce Labs Bike Light')]'.</msg>
 <arg>${productdog}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:51.142922" elapsed="0.057619"/>
+<status status="PASS" start="2025-05-26T15:55:19.980583" elapsed="0.222012"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:51.201102" level="INFO">Clicking button 'xpath://button[@class='btn btn_primary btn_small btn_inventory']'.</msg>
+<msg time="2025-05-26T15:55:20.203391" level="INFO">Clicking button 'xpath://button[@class='btn btn_primary btn_small btn_inventory']'.</msg>
 <arg>${addtocart}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:51.200814" elapsed="0.074251"/>
+<status status="PASS" start="2025-05-26T15:55:20.203031" elapsed="0.247356"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:51.142663" elapsed="0.132518"/>
+<status status="PASS" start="2025-05-26T15:55:19.980179" elapsed="0.470401"/>
 </kw>
 <kw name="click the add to cart button" owner="addtocartresource">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:51.275769" level="INFO">Clicking element 'xpath://a[@class='shopping_cart_link']'.</msg>
+<msg time="2025-05-26T15:55:20.451524" level="INFO">Clicking element 'xpath://a[@class='shopping_cart_link']'.</msg>
 <arg>${addtocartbtn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:51.275598" elapsed="0.071812"/>
+<status status="PASS" start="2025-05-26T15:55:20.451259" elapsed="0.247778"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:51.275352" elapsed="0.072347"/>
+<status status="PASS" start="2025-05-26T15:55:20.450859" elapsed="0.248568"/>
 </kw>
 <kw name="click the checkout button in the cart" owner="addtocartresource">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:51.348486" level="INFO">Clicking button 'id:checkout'.</msg>
+<msg time="2025-05-26T15:55:20.702264" level="INFO">Clicking button 'id:checkout'.</msg>
 <arg>${checkout}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:51.348269" elapsed="0.077898"/>
+<status status="PASS" start="2025-05-26T15:55:20.701043" elapsed="0.252861"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:51.347944" elapsed="0.078381"/>
+<status status="PASS" start="2025-05-26T15:55:20.700107" elapsed="0.254241"/>
 </kw>
 <kw name="Fill the checkout details" owner="CheckoutStepOneResource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:51.427008" level="INFO">Typing text 'Div' into text field 'id:first-name'.</msg>
+<msg time="2025-05-26T15:55:20.957614" level="INFO">Typing text '' into text field 'id:first-name'.</msg>
 <arg>id:first-name</arg>
 <arg>${firstname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:51.426838" elapsed="0.093618"/>
+<status status="PASS" start="2025-05-26T15:55:20.956605" elapsed="0.088766"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:51.520872" level="INFO">Typing text 'M' into text field 'id:last-name'.</msg>
+<msg time="2025-05-26T15:55:21.046572" level="INFO">Typing text 'M' into text field 'id:last-name'.</msg>
 <arg>id:last-name</arg>
 <arg>${lastname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:51.520645" elapsed="0.125153"/>
+<status status="PASS" start="2025-05-26T15:55:21.045922" elapsed="0.027861"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:51.646286" level="INFO">Typing text '632589' into text field 'id:postal-code'.</msg>
+<msg time="2025-05-26T15:55:21.074808" level="INFO">Typing text '63258' into text field 'id:postal-code'.</msg>
 <arg>id:postal-code</arg>
 <arg>${zipcode}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:51.646041" elapsed="0.126709"/>
+<status status="PASS" start="2025-05-26T15:55:21.074235" elapsed="0.041978"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:51.774657" level="INFO">Clicking button 'id=continue'.</msg>
+<msg time="2025-05-26T15:55:21.117117" level="INFO">Clicking button 'id=continue'.</msg>
 <arg>id=continue</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-25T20:07:51.773699" elapsed="0.136553"/>
+<status status="PASS" start="2025-05-26T15:55:21.116663" elapsed="0.230563"/>
 </kw>
 <arg>${firstname}</arg>
 <arg>${lastname}</arg>
 <arg>${zipcode}</arg>
-<status status="PASS" start="2025-05-25T20:07:51.426508" elapsed="0.484034"/>
+<status status="PASS" start="2025-05-26T15:55:20.955086" elapsed="0.392426"/>
 </kw>
 <if>
-<branch type="IF" condition="len('${firstname}') == 0 and len('${lastname}') == 0">
-<kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:51.911482" elapsed="0.000088"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:51.910759" elapsed="0.000890"/>
-</branch>
-<branch type="ELSE IF" condition="len($firstname) == 0 and len($zipcode) == 0">
+<branch type="IF" condition="'${firstname}' != '' and '${lastname}' == '' and '${zipcode}' == ''">
 <kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:51.912295" elapsed="0.000074"/>
+<status status="NOT RUN" start="2025-05-26T15:55:21.348533" elapsed="0.000078"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:51.911721" elapsed="0.000722"/>
+<status status="NOT RUN" start="2025-05-26T15:55:21.347760" elapsed="0.000944"/>
 </branch>
-<branch type="ELSE IF" condition="len($zipcode) == 0 and len($lastname) == 0">
-<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:51.913088" elapsed="0.000093"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:51.912509" elapsed="0.000773"/>
-</branch>
-<branch type="ELSE IF" condition="len($firstname) == 0">
-<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:51.913847" elapsed="0.000053"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:51.913408" elapsed="0.000550"/>
-</branch>
-<branch type="ELSE IF" condition="len($lastname) == 0">
-<kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:51.914680" elapsed="0.000051"/>
-</kw>
-<status status="NOT RUN" start="2025-05-25T20:07:51.914097" elapsed="0.000691"/>
-</branch>
-<branch type="ELSE IF" condition="len($zipcode) == 0">
+<branch type="ELSE IF" condition="'${firstname}' != '' and '${lastname}' != '' and '${zipcode}' == ''">
 <kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:51.915280" elapsed="0.000067"/>
+<status status="NOT RUN" start="2025-05-26T15:55:21.349351" elapsed="0.000069"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:51.914845" elapsed="0.000575"/>
+<status status="NOT RUN" start="2025-05-26T15:55:21.348792" elapsed="0.000711"/>
 </branch>
-<branch type="ELSE IF" condition="len($firstname) == 0 and len($zipcode) == 0 and len($lastname) == 0">
+<branch type="ELSE IF" condition="'${zipcode}' != '' and '${lastname}' != '' and '${firstname}' == ''">
 <kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
-<status status="NOT RUN" start="2025-05-25T20:07:51.916285" elapsed="0.000081"/>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-26T15:55:21.351767" level="INFO">Verifying element 'xpath://h3[@data-test='error']' contains exact text 'Error: First Name is required'.</msg>
+<arg>${error_msg}</arg>
+<arg>expected=Error: First Name is required</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-26T15:55:21.350819" elapsed="0.023585"/>
 </kw>
-<status status="NOT RUN" start="2025-05-25T20:07:51.915479" elapsed="0.000998"/>
+<status status="PASS" start="2025-05-26T15:55:21.350124" elapsed="0.024546"/>
+</kw>
+<status status="PASS" start="2025-05-26T15:55:21.349586" elapsed="0.025181"/>
+</branch>
+<branch type="ELSE IF" condition="'${firstname}' == ''">
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:55:21.375262" elapsed="0.000075"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:55:21.374870" elapsed="0.000550"/>
+</branch>
+<branch type="ELSE IF" condition="'${lastname}' == ''">
+<kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:55:21.375765" elapsed="0.000066"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:55:21.375500" elapsed="0.000410"/>
+</branch>
+<branch type="ELSE IF" condition="'${zipcode}' == ''">
+<kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:55:21.376239" elapsed="0.000065"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:55:21.375988" elapsed="0.000394"/>
+</branch>
+<branch type="ELSE IF" condition="'${firstname}' != '' and '${zipcode}' != '' and '${lastname}' != ''">
+<kw name="Verify the user go to checkout finish page" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:55:21.376705" elapsed="0.000063"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:55:21.376458" elapsed="0.000391"/>
 </branch>
 <branch type="ELSE">
-<kw name="Verify the user go to checkout finish page" owner="CheckoutStepOneResource">
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-25T20:07:51.917853" level="INFO">Verifying element 'id:finish' contains exact text 'Finish'.</msg>
-<arg>id:finish</arg>
-<arg>Finish</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-05-25T20:07:51.917543" elapsed="0.029573"/>
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:55:21.377164" elapsed="0.000062"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:51.916992" elapsed="0.030484"/>
-</kw>
-<status status="PASS" start="2025-05-25T20:07:51.916558" elapsed="0.031021"/>
+<status status="NOT RUN" start="2025-05-26T15:55:21.376925" elapsed="0.000377"/>
 </branch>
-<status status="PASS" start="2025-05-25T20:07:51.910682" elapsed="0.037025"/>
+<status status="PASS" start="2025-05-26T15:55:21.347702" elapsed="0.029673"/>
 </if>
-<arg>firstname=Div</arg>
+<arg>firstname=</arg>
 <arg>lastname=M</arg>
-<arg>zipcode=632589</arg>
-<status status="PASS" start="2025-05-25T20:07:50.751743" elapsed="1.196098"/>
+<arg>zipcode=63258</arg>
+<status status="PASS" start="2025-05-26T15:55:19.592549" elapsed="1.784940"/>
 </kw>
 <kw name="Close browser session" owner="GenericResources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-25T20:07:51.949938" elapsed="9.189037"/>
+<status status="PASS" start="2025-05-26T15:55:21.378984" elapsed="2.967569"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:51.949122" elapsed="9.190263"/>
+<status status="PASS" start="2025-05-26T15:55:21.378314" elapsed="2.968550"/>
 </kw>
-<status status="PASS" start="2025-05-25T20:07:47.929129" elapsed="13.210469"/>
+<status status="PASS" start="2025-05-26T15:55:12.591861" elapsed="11.755762"/>
+</test>
+<test id="s1-t8" name="Validate the checkout form page" line="20">
+<kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-05-26T15:55:24.355648" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2025-05-26T15:55:24.355042" elapsed="6.053134"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-26T15:55:30.408556" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-26T15:55:30.408384" elapsed="0.749351"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-26T15:55:31.158022" elapsed="0.283109"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-26T15:55:31.441386" elapsed="0.002519"/>
+</kw>
+<status status="PASS" start="2025-05-26T15:55:24.354144" elapsed="7.089879"/>
+</kw>
+<kw name="Validate the checkout page form">
+<kw name="Fill the login form" owner="LoginPageResource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-26T15:55:31.445453" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-26T15:55:31.445250" elapsed="0.104789"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-26T15:55:31.550501" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2025-05-26T15:55:31.557463" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-26T15:55:31.550261" elapsed="0.031984"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-26T15:55:31.582588" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-26T15:55:31.582425" elapsed="0.273594"/>
+</kw>
+<arg>username=standard_user</arg>
+<arg>password=secret_sauce</arg>
+<status status="PASS" start="2025-05-26T15:55:31.444959" elapsed="0.411210"/>
+</kw>
+<kw name="Add the Product to the cart" owner="ProductpageResource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-26T15:55:31.857732" level="INFO">Clicking element 'xpath://div[contains(text(),'Sauce Labs Bike Light')]'.</msg>
+<arg>${productdog}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-26T15:55:31.857316" elapsed="0.245668"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-26T15:55:32.103591" level="INFO">Clicking button 'xpath://button[@class='btn btn_primary btn_small btn_inventory']'.</msg>
+<arg>${addtocart}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-26T15:55:32.103230" elapsed="0.240901"/>
+</kw>
+<status status="PASS" start="2025-05-26T15:55:31.856676" elapsed="0.487808"/>
+</kw>
+<kw name="click the add to cart button" owner="addtocartresource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-26T15:55:32.346130" level="INFO">Clicking element 'xpath://a[@class='shopping_cart_link']'.</msg>
+<arg>${addtocartbtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-26T15:55:32.345671" elapsed="0.229913"/>
+</kw>
+<status status="PASS" start="2025-05-26T15:55:32.344957" elapsed="0.230770"/>
+</kw>
+<kw name="click the checkout button in the cart" owner="addtocartresource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-26T15:55:32.576515" level="INFO">Clicking button 'id:checkout'.</msg>
+<arg>${checkout}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-26T15:55:32.576267" elapsed="0.249476"/>
+</kw>
+<status status="PASS" start="2025-05-26T15:55:32.575920" elapsed="0.249941"/>
+</kw>
+<kw name="Fill the checkout details" owner="CheckoutStepOneResource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-26T15:55:32.826607" level="INFO">Typing text 'Div' into text field 'id:first-name'.</msg>
+<arg>id:first-name</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-26T15:55:32.826404" elapsed="0.059713"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-26T15:55:32.886762" level="INFO">Typing text 'M' into text field 'id:last-name'.</msg>
+<arg>id:last-name</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-26T15:55:32.886435" elapsed="0.038279"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-26T15:55:32.925402" level="INFO">Typing text '632589' into text field 'id:postal-code'.</msg>
+<arg>id:postal-code</arg>
+<arg>${zipcode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-26T15:55:32.925117" elapsed="0.034635"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-26T15:55:32.960229" level="INFO">Clicking button 'id=continue'.</msg>
+<arg>id=continue</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-26T15:55:32.959991" elapsed="0.224605"/>
+</kw>
+<arg>${firstname}</arg>
+<arg>${lastname}</arg>
+<arg>${zipcode}</arg>
+<status status="PASS" start="2025-05-26T15:55:32.826049" elapsed="0.358772"/>
+</kw>
+<if>
+<branch type="IF" condition="'${firstname}' != '' and '${lastname}' == '' and '${zipcode}' == ''">
+<kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:55:33.185662" elapsed="0.000064"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:55:33.185010" elapsed="0.000780"/>
+</branch>
+<branch type="ELSE IF" condition="'${firstname}' != '' and '${lastname}' != '' and '${zipcode}' == ''">
+<kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:55:33.186287" elapsed="0.000062"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:55:33.185853" elapsed="0.000563"/>
+</branch>
+<branch type="ELSE IF" condition="'${zipcode}' != '' and '${lastname}' != '' and '${firstname}' == ''">
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:55:33.187475" elapsed="0.000076"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:55:33.186487" elapsed="0.001144"/>
+</branch>
+<branch type="ELSE IF" condition="'${firstname}' == ''">
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:55:33.188094" elapsed="0.000055"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:55:33.187705" elapsed="0.000507"/>
+</branch>
+<branch type="ELSE IF" condition="'${lastname}' == ''">
+<kw name="Verify the get the error message as Lastname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:55:33.188598" elapsed="0.000054"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:55:33.188272" elapsed="0.000439"/>
+</branch>
+<branch type="ELSE IF" condition="'${zipcode}' == ''">
+<kw name="Verify the get the error message as postcode" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:55:33.189077" elapsed="0.000050"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:55:33.188769" elapsed="0.000418"/>
+</branch>
+<branch type="ELSE IF" condition="'${firstname}' != '' and '${zipcode}' != '' and '${lastname}' != ''">
+<kw name="Verify the user go to checkout finish page" owner="CheckoutStepOneResource">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-26T15:55:33.190707" level="INFO">Verifying element 'id:finish' contains exact text 'Finish'.</msg>
+<arg>id:finish</arg>
+<arg>Finish</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-26T15:55:33.190230" elapsed="0.028456"/>
+</kw>
+<status status="PASS" start="2025-05-26T15:55:33.189672" elapsed="0.029299"/>
+</kw>
+<status status="PASS" start="2025-05-26T15:55:33.189250" elapsed="0.029808"/>
+</branch>
+<branch type="ELSE">
+<kw name="Verify the get the error message as Firstname" owner="CheckoutStepOneResource">
+<status status="NOT RUN" start="2025-05-26T15:55:33.219499" elapsed="0.000073"/>
+</kw>
+<status status="NOT RUN" start="2025-05-26T15:55:33.219142" elapsed="0.000504"/>
+</branch>
+<status status="PASS" start="2025-05-26T15:55:33.184962" elapsed="0.034746"/>
+</if>
+<arg>firstname=Div</arg>
+<arg>lastname=M</arg>
+<arg>zipcode=632589</arg>
+<status status="PASS" start="2025-05-26T15:55:31.444564" elapsed="1.775245"/>
+</kw>
+<kw name="Close browser session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-26T15:55:33.221913" elapsed="2.986844"/>
+</kw>
+<status status="PASS" start="2025-05-26T15:55:33.221131" elapsed="2.987896"/>
+</kw>
+<status status="PASS" start="2025-05-26T15:55:24.350341" elapsed="11.859281"/>
 </test>
 <doc>Tests to Login</doc>
-<status status="FAIL" start="2025-05-25T20:07:07.024527" elapsed="54.116283"/>
+<status status="PASS" start="2025-05-26T15:53:58.820799" elapsed="97.391040"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="4" skip="0">All Tests</stat>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="CheckoutStepOneTest" id="s1" pass="3" fail="4" skip="0">CheckoutStepOneTest</stat>
+<stat name="CheckoutStepOneTest" id="s1" pass="8" fail="0" skip="0">CheckoutStepOneTest</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-05-25T20:07:16.315860" level="WARN">Multiple tests with name 'Validate the checkout form page' executed in suite 'CheckoutStepOneTest'.</msg>
-<msg time="2025-05-25T20:07:22.462859" level="WARN">Multiple tests with name 'Validate the checkout form page' executed in suite 'CheckoutStepOneTest'.</msg>
-<msg time="2025-05-25T20:07:28.273546" level="WARN">Multiple tests with name 'Validate the checkout form page' executed in suite 'CheckoutStepOneTest'.</msg>
-<msg time="2025-05-25T20:07:33.965452" level="WARN">Multiple tests with name 'Validate the checkout form page' executed in suite 'CheckoutStepOneTest'.</msg>
-<msg time="2025-05-25T20:07:39.797678" level="WARN">Multiple tests with name 'Validate the checkout form page' executed in suite 'CheckoutStepOneTest'.</msg>
-<msg time="2025-05-25T20:07:47.929175" level="WARN">Multiple tests with name 'Validate the checkout form page' executed in suite 'CheckoutStepOneTest'.</msg>
+<msg time="2025-05-26T15:54:13.044854" level="WARN">Multiple tests with name 'Validate the checkout form page' executed in suite 'CheckoutStepOneTest'.</msg>
+<msg time="2025-05-26T15:54:24.892636" level="WARN">Multiple tests with name 'Validate the checkout form page' executed in suite 'CheckoutStepOneTest'.</msg>
+<msg time="2025-05-26T15:54:37.019216" level="WARN">Multiple tests with name 'Validate the checkout form page' executed in suite 'CheckoutStepOneTest'.</msg>
+<msg time="2025-05-26T15:54:48.881136" level="WARN">Multiple tests with name 'Validate the checkout form page' executed in suite 'CheckoutStepOneTest'.</msg>
+<msg time="2025-05-26T15:55:00.693858" level="WARN">Multiple tests with name 'Validate the checkout form page' executed in suite 'CheckoutStepOneTest'.</msg>
+<msg time="2025-05-26T15:55:12.591974" level="WARN">Multiple tests with name 'Validate the checkout form page' executed in suite 'CheckoutStepOneTest'.</msg>
+<msg time="2025-05-26T15:55:24.350435" level="WARN">Multiple tests with name 'Validate the checkout form page' executed in suite 'CheckoutStepOneTest'.</msg>
 </errors>
 </robot>

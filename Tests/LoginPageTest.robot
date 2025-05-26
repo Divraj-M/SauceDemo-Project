@@ -5,7 +5,7 @@ Test Setup    Open the browser with URL
 Test Teardown    Close browser session
 Resource    ../Resources/GenericResources.robot
 Resource    ../Resources/LoginPageResource.robot
-Library    DataDriver    file=C:/Users/Lenovo/Desktop/SauceDemo-Project/Resources/LoginDataSauce.xlsx    sheet_name=Sheet1
+Library    DataDriver    file=../Resources/LoginDataSauce.xlsx    sheet_name=Sheet1
 Test Template    Validate Login in sauce demo
 
 *** Variables ***
